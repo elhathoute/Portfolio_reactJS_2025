@@ -22,8 +22,31 @@ const Clients = () => {
     featured: key === 'mtedd' // MTEDD est le client vedette
   }));
 
-  const itemsPerView = 3; // Afficher 3 éléments à la fois
-  const maxIndex = Math.max(0, clients.length - itemsPerView);
+  // Responsive items per view
+  const [itemsPerView, setItemsPerView] = useState(3);
+  const [maxIndex, setMaxIndex] = useState(0);
+
+  // Update items per view based on screen size
+  useEffect(() => {
+    const updateItemsPerView = () => {
+      if (window.innerWidth < 768) {
+        setItemsPerView(1); // Mobile: 1 item
+      } else if (window.innerWidth < 1024) {
+        setItemsPerView(2); // Tablet: 2 items
+      } else {
+        setItemsPerView(3); // Desktop: 3 items
+      }
+    };
+
+    updateItemsPerView();
+    window.addEventListener('resize', updateItemsPerView);
+    return () => window.removeEventListener('resize', updateItemsPerView);
+  }, []);
+
+  // Update maxIndex when itemsPerView changes
+  useEffect(() => {
+    setMaxIndex(Math.max(0, clients.length - itemsPerView));
+  }, [clients.length, itemsPerView]);
 
   // Auto-play functionality
   useEffect(() => {
@@ -83,7 +106,7 @@ const Clients = () => {
               style={{ transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)` }}
             >
               {clients.map((client, index) => (
-                <div key={client.id} className="w-full flex-shrink-0 px-4" style={{ width: `${100 / itemsPerView}%` }}>
+                <div key={client.id} className="w-full flex-shrink-0 px-2 md:px-4" style={{ width: `${100 / itemsPerView}%` }}>
                   <Card className="h-full group">
                     <div className="space-y-6">
                       {/* Client Logo/Header */}
@@ -155,18 +178,18 @@ const Clients = () => {
           {/* Navigation Buttons */}
           <button
             onClick={goToPrevious}
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 z-10"
+            className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 z-10"
             aria-label="Previous client"
           >
-            <ChevronLeft size={24} />
+            <ChevronLeft size={20} className="md:w-6 md:h-6" />
           </button>
 
           <button
             onClick={goToNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 z-10"
+            className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 z-10"
             aria-label="Next client"
           >
-            <ChevronRight size={24} />
+            <ChevronRight size={20} className="md:w-6 md:h-6" />
           </button>
 
           {/* Dots Indicator */}
