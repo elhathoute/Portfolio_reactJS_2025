@@ -1,0 +1,425 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "clients": "Clients",
+    "recommendations": "Recommandations",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Salut, je suis",
+    "name": "AbdelazizElh Elhathout",
+    "title": "Développeur Full Stack",
+    "description": "Passionné par la création de solutions web innovantes et performantes. Spécialisé dans le développement d'applications modernes avec les dernières technologies.",
+    "cta": {
+      "projects": "Voir mes projets",
+      "contact": "Me contacter"
+    }
+  },
+  "about": {
+    "title": "À propos de moi",
+    "subtitle": "Développeur passionné avec une expertise technique solide",
+    "bio": {
+      "p1": "Je suis AbdelazizElh Elhathout, un développeur Full Stack passionné par la création de solutions web innovantes. Avec plusieurs années d'expérience dans le développement d'applications web modernes, je me spécialise dans la création d'expériences utilisateur exceptionnelles.",
+      "p2": "Mon expertise couvre l'ensemble du stack technologique, du frontend au backend, en passant par les bases de données et le déploiement. Je suis constamment à la recherche de nouvelles technologies et de meilleures pratiques pour améliorer mes compétences.",
+      "p3": "Actuellement, je travaille chez Decq Print Maroc en tant que développeur Full Stack, où je contribue au développement de solutions d'impression en ligne innovantes."
+    },
+    "skills": {
+      "title": "Compétences techniques",
+      "frontend": {
+        "title": "Frontend",
+        "items": ["React", "Vue.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": ["PHP", "Laravel", "Symfony", "Node.js", "Python", "RESTful APIs", "GraphQL", "MySQL", "PostgreSQL"]
+      },
+      "devops": {
+        "title": "DevOps & Outils",
+        "items": ["Docker", "Git", "GitHub", "CI/CD", "Linux", "AWS", "Nginx", "Composer", "NPM"]
+      }
+    },
+    "softSkills": {
+      "title": "Compétences transversales",
+      "items": ["Travail d'équipe", "Communication", "Résolution de problèmes", "Gestion de projet", "Apprentissage continu", "Adaptabilité"]
+    }
+  },
+  "projects": {
+    "title": "Mes projets",
+    "subtitle": "Découvrez quelques-unes de mes réalisations récentes",
+    "viewAll": "Voir tous les projets",
+    "viewCode": "Voir le code",
+    "liveDemo": "Démo live",
+    "items": {
+      "decq": {
+        "title": "Développeur Full-Stack (Decq Print)",
+        "period": "2024-Présent",
+        "description": "Solution de gestion de production industrielle avec backend APIs, plateforme logistique et interfaces CRUD complètes.",
+        "details": {
+          "backend": "APIs (gestion parc machines, orchestration production, analyse capacités), plateforme logistique (documents automatisés, intégration AWS S3)",
+          "frontend": "Interfaces CRUD, planification visuelle, tableaux de bord, module commandes (PDF dynamiques)",
+          "stack": "Symfony/Vue.js, API REST, Twig, Docker, AWS, DOMPDF"
+        },
+        "technologies": ["Symfony", "Vue.js", "API REST", "Twig", "Docker", "AWS", "DOMPDF"],
+        "github": "https://github.com/decq-print",
+        "demo": "https://decq.com/",
+        "category": "Full-Stack Development"
+      },
+      "wobz": {
+        "title": "Développeur Full-Stack (WObz Technologie)",
+        "period": "2023-2024",
+        "description": "Solution e-commerce et gestion financière avec intégration Magento 2 et workflow de gestion complet.",
+        "details": {
+          "backend": "Intégration Magento 2 (import commandes, sync stocks), Workflow gestion (commandes, fichiers S3), Module financier (paiements SEPA, génération documents)",
+          "frontend": "Dashboard commandes, gestion clients",
+          "stack": "Symfony/Vue.js, API REST, Twig, Docker, AWS, RabbitMQ, GoCardless, API Magento 2"
+        },
+        "technologies": ["Symfony", "Vue.js", "Magento 2", "RabbitMQ", "GoCardless", "AWS", "Docker"],
+        "github": "https://github.com/wobz-tech",
+        "demo": "#",
+        "category": "Full-Stack Development"
+      },
+      "gestion-bureaux": {
+        "title": "Gestion Bureau D'études (ADMDI)",
+        "period": "05/2023",
+        "description": "Système de gestion de bureau d'études avec modules clients/projets et gestion financière multi-devises.",
+        "details": {
+          "features": "Modules clients/projets + financier (multi-devises, facturation), Gestion des rôles utilisateurs (admin/assistants)",
+          "stack": "PHP, MySQL, Bootstrap, JavaScript, DOMPDF"
+        },
+        "technologies": ["PHP", "MySQL", "Bootstrap", "JavaScript", "DOMPDF"],
+        "github": "https://github.com/elhathoute/Gestion_Bureaux_Etudes",
+        "demo": "#",
+        "category": "Web Development"
+      },
+      "youtrain": {
+        "title": "YouTrain™ Booking (YOUCODE)",
+        "period": "11/2022",
+        "description": "Plateforme de réservation ferroviaire avec gestion complète du réseau et moteur de recherche intégré.",
+        "details": {
+          "features": "Gestion complète du réseau (villes/gares/trains), Moteur de recherche et billetterie intégrée",
+          "stack": "Laravel, MySQL, Bootstrap"
+        },
+        "technologies": ["Laravel", "MySQL", "Bootstrap"],
+        "github": "https://github.com/elhathoute/TrainBooking",
+        "demo": "#",
+        "category": "Web Development"
+      },
+      "holt-forecasting": {
+        "title": "Sales Forecasting App with Holt's Method",
+        "period": "2024",
+        "description": "Application Streamlit pour la prévision des ventes utilisant la méthode de lissage exponentiel double de Holt.",
+        "details": {
+          "features": "Base de données produits Excel (codes EAN), Saisie de données historiques sur 12 mois, Période de prévision personnalisable (1-12 mois), Fonctionnalité d'export CSV, Design responsive",
+          "stack": "Python, Streamlit, Pandas, NumPy, Matplotlib, Excel"
+        },
+        "technologies": ["Python", "Streamlit", "Pandas", "NumPy", "Matplotlib", "Excel"],
+        "github": "https://github.com/elhathoute/holt-sales-forecasting",
+        "demo": "https://holt-sales-forecasting.streamlit.app/",
+        "category": "Data Science"
+      }
+    }
+  },
+  "experience": {
+    "title": "Expérience professionnelle",
+    "subtitle": "Mon parcours et mes réalisations",
+    "current": "Actuel",
+    "items": {
+      "decq-print": {
+        "title": "Développeur Full Stack",
+        "company": "Decq Print Maroc",
+        "period": "Juin 2024 - Présent",
+        "location": "Casablanca, Maroc",
+        "description": "Développement de solutions d'impression en ligne avec Laravel et Vue.js. Gestion de l'architecture backend et optimisation des performances."
+      },
+      "wobz": {
+        "title": "Développeur Full Stack",
+        "company": "Wobz Technologies Maroc",
+        "period": "Juin 2023 - Juin 2024",
+        "location": "Casablanca, Maroc",
+        "description": "Développement d'applications web pour la personnalisation de contenants réutilisables. Collaboration avec l'équipe française."
+      },
+      "admdi": {
+        "title": "Stagiaire Développeur Full Stack",
+        "company": "ADMDI",
+        "period": "Mai 2023 - Juin 2023",
+        "location": "Agadir, Maroc",
+        "description": "Stage de fin d'études en développement web et marketing digital. Création d'applications web personnalisées."
+      },
+      "freelance": {
+        "title": "Développeur Freelance",
+        "company": "Freelance",
+        "period": "Janvier 2022 - Avril 2023",
+        "location": "Youssoufia, Maroc",
+        "description": "Développement d'applications et sites web pour divers clients. Gestion complète des projets de A à Z."
+      }
+    },
+    "education": {
+      "title": "Formation",
+      "items": {
+        "youcode": {
+          "title": "Développement Web Full Stack",
+          "school": "YouCode",
+          "period": "2022 - 2023",
+          "location": "Youssoufia, Maroc",
+          "description": "Formation intensive en développement web avec focus sur les technologies modernes et les bonnes pratiques."
+        },
+        "university": {
+          "title": "Licence en Sciences et Techniques",
+          "school": "Université Cadi Ayyad",
+          "period": "2019 - 2022",
+          "location": "Marrakech, Maroc",
+          "description": "Formation en informatique et technologies de l'information avec spécialisation en développement logiciel."
+        }
+      }
+    },
+    "certifications": {
+      "title": "Certifications",
+      "items": {
+        "fstg-recommendation": {
+          "title": "Lettre de Recommandation (FSTG Marrakech)",
+          "issuer": "FSTG Marrakech",
+          "date": "Mai 2021",
+          "location": "MARRAKECH, MAROC",
+          "description": "Lettre de recommandation du Prof. Younes Zouani (professeur Java Spring Boot) à la Faculté des Sciences et Techniques Gueliz.",
+          "pdf": "https://elhathoutwobz.github.io/portfolio_2024/assets/pdf/certif/java-jee.pdf"
+        },
+        "sql-intermediate": {
+          "title": "Certificat SQL (Intermédiaire)",
+          "issuer": "HackerRank",
+          "date": "Décembre 2022",
+          "description": "Certification SQL intermédiaire de HackerRank démontrant la maîtrise des requêtes complexes, des jointures et des opérations de base de données.",
+          "pdf": "https://elhathoutwobz.github.io/portfolio_2024/assets/pdf/certif/sql_intermediate.pdf"
+        },
+        "sql-basic": {
+          "title": "Certificat SQL (Basique)",
+          "issuer": "HackerRank",
+          "date": "Novembre 2022",
+          "description": "Certification SQL basique de HackerRank couvrant les concepts fondamentaux des bases de données et les compétences d'écriture de requêtes.",
+          "pdf": "https://elhathoutwobz.github.io/portfolio_2024/assets/pdf/certif/sql_basic.pdf"
+        },
+        "symfony-basics": {
+          "title": "PHP SYMFONY BASICS",
+          "issuer": "CodeSignal",
+          "date": "Mars 2025",
+          "description": "Fondamentaux du framework PHP Symfony de CodeSignal couvrant les concepts de base et l'architecture.",
+          "pdf": "https://elhathoutwobz.github.io/portfolio_2024/assets/pdf/certif/certificate-symfony-basic.pdf"
+        },
+        "symfony-mvc-todo": {
+          "title": "Building a MVC ToDo App with Symfony",
+          "issuer": "CodeSignal",
+          "date": "Avril 2025",
+          "description": "Développement d'une application ToDo complète utilisant l'architecture MVC Symfony, implémentant : gestion des tâches, authentification utilisateur, et interface responsive.",
+          "pdf": "https://elhathoutwobz.github.io/portfolio_2024/assets/pdf/certif/certificate-mvc-symfony.pdf"
+        }
+      }
+    }
+  },
+  "clients": {
+    "title": "Nos clients",
+    "subtitle": "Organisations qui nous font confiance",
+    "description": "Nous avons eu le plaisir de travailler avec des organisations de renom, du secteur public et privé, pour développer des solutions web innovantes et performantes.",
+    "items": {
+      "mtedd": {
+        "name": "Ministère de la Transition Énergétique et du Développement Durable",
+        "description": "Refactorisation complète du site web actuel du ministère avec WordPress. Amélioration de l'architecture, optimisation des performances et modernisation de l'interface utilisateur pour une meilleure expérience citoyenne.",
+        "website": "https://www.mtedd.gov.ma/",
+        "sector": "Secteur public",
+        "location": "Rabat, Maroc",
+        "logo": "/assets/img/clients/mtedd-logoFR-2048x593.png"
+      },
+      "houdamanouzi": {
+        "name": "Houda Manouzi",
+        "description": "Création de solutions web personnalisées et développement d'applications pour des projets entrepreneuriaux innovants.",
+        "website": "https://houdamanouzi.ma/",
+        "sector": "Entrepreneuriat",
+        "location": "Maroc",
+        "logo": "/assets/img/clients/houdamanouzi-logo.jpg"
+      },
+      "stayinmedia": {
+        "name": "StayInMedia",
+        "description": "Développement de plateformes digitales et solutions web pour l'industrie des médias et du divertissement.",
+        "website": "https://www.stayinmedia.ma",
+        "sector": "Médias & Divertissement",
+        "location": "Casablanca, Maroc",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmfOGnGZ6K0tln7nAhcN0TEUiVpA929p8Bg&s"
+      },
+      "aliabencheikh": {
+        "name": "Dr. Alia Bencheikh",
+        "description": "Développement de solutions web pour le secteur médical et création de plateformes de gestion de cabinet médical.",
+        "website": "https://draliabencheikh.ma",
+        "sector": "Santé & Médecine",
+        "location": "Maroc",
+        "logo": "https://draliabencheikh.ma/img/doctor-image/logo-removebg-preview.png"
+      },
+      "youssef-bijouterie": {
+        "name": "Youssef Bijouterie Témara",
+        "description": "Création d'une boutique en ligne pour la bijouterie avec système de gestion des commandes et paiements sécurisés.",
+        "website": "https://youssefbijouterie.ma/",
+        "sector": "Bijouterie & Luxe",
+        "location": "Témara, Maroc",
+        "logo": "https://youssefbijouterie.ma/assets/img/watch-image/logoYoussef-0001%20-1.jpg"
+      },
+      "sidimaarouf": {
+        "name": "Cabinet Pluridisciplinaire Sidi Maarouf",
+        "description": "Développement d'une plateforme web pour un cabinet médical pluridisciplinaire avec système de prise de rendez-vous.",
+        "website": "https://cabinetpluridisciplinairesidimaarouf.ma/",
+        "sector": "Santé & Médecine",
+        "location": "Casablanca, Maroc",
+        "logo": "https://cabinetpluridisciplinairesidimaarouf.ma/assets/img/logo.png"
+      },
+      "immo-pilot": {
+        "name": "Immo Pilot",
+        "description": "Création d'une plateforme immobilière avec système de recherche avancée et gestion des biens immobiliers.",
+        "website": "https://immo-pilot.ma/",
+        "sector": "Immobilier",
+        "location": "Maroc",
+        "logo": "https://immo-pilot.ma/logo-immo-pilot.png"
+      },
+      "smiledesign": {
+        "name": "Clinique Dentaire Smile Design",
+        "description": "Développement d'un site web professionnel pour une clinique dentaire avec système de prise de rendez-vous en ligne.",
+        "website": "https://cdpc.kesug.com/",
+        "sector": "Santé & Dentaire",
+        "location": "Maroc",
+        "logo": "https://www.dentiste-mohammedia.com/wp-content/uploads/2024/06/logo-1.png"
+      }
+    }
+  },
+  "recommendations": {
+    "title": "📝 Recommandations Professionnelles",
+    "subtitle": "Ce que disent mes collègues et collaborateurs",
+    "items": {
+      "fouad": {
+        "name": "Fouad Houdda",
+        "position": "Développeur Full Stack JAVA/Angular",
+        "text": "Je recommande AbdelazizElh avec confiance comme un développeur dédié, compétent et très motivé. Tout au long de notre collaboration, il a constamment démontré de solides compétences techniques ainsi qu'un esprit proactif."
+      },
+      "mounir": {
+        "name": "Mounir El Bakkali 🇵🇸",
+        "position": "Ingénieur logiciel chez iMedia24 GmbH",
+        "text": "C'est avec plaisir que je recommande AbdelazizElh, un développeur full stack très compétent avec qui j'ai eu le plaisir de travailler sur plusieurs projets. Il excelle dans la traduction des besoins clients en solutions concrètes et maîtrise aussi bien le backend que le frontend."
+      },
+      "paul": {
+        "name": "Paul Roux",
+        "position": "Chef d'équipe chez Decq",
+        "text": "Je suis ravi de recommander AbdelazizElh, avec qui je travaille depuis un an et demi chez Decq. Il s'est imposé comme un professionnel fiable, rigoureux et curieux. Il analyse rapidement les situations et prend des décisions efficaces. Sa bienveillance et son enthousiasme rendent le travail à ses côtés très agréable. Je le recommande chaleureusement."
+      },
+      "anas": {
+        "name": "Anas Barnouch",
+        "position": "Étudiant en Master Big Data & Cloud Computing",
+        "text": "J'ai eu le plaisir de travailler avec AbdelazizElh à l'école YouCode. Il fait preuve de sérieux, de compétence technique et d'un bon esprit d'équipe. AbdelazizElh est un atout précieux pour toute équipe de développement."
+      },
+      "quentin": {
+        "name": "Quentin Dessartine",
+        "position": "Lead Développeur",
+        "text": "J'ai collaboré avec AbdelazizElh, un développeur full stack remarquable par son sérieux, sa réactivité et son professionnalisme. Il place toujours les besoins du client au centre de ses priorités, anticipe les problèmes, propose des solutions concrètes et assure une qualité de code irréprochable. Un profil rare que je recommande sans hésiter."
+      },
+      "nouhaila": {
+        "name": "Nouhaila Gourram",
+        "position": "Ingénieure Logiciel",
+        "text": "AbdelazizElh est un développeur full stack fiable et compétent. Il possède un esprit analytique affûté, écrit un code propre et aborde chaque mission avec sérieux. Un excellent collaborateur avec un fort potentiel."
+      }
+    }
+  },
+  "blog": {
+    "title": "📝 Blog & Articles",
+    "subtitle": "Mes derniers articles et réflexions sur le développement web",
+    "description": "Découvrez mes articles sur LinkedIn où je partage mes expériences, conseils et réflexions sur le développement web, les technologies et l'entrepreneuriat.",
+    "items": {
+      "post1": {
+        "title": "Article LinkedIn 1",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7290481270030028802"
+      },
+      "post2": {
+        "title": "Article LinkedIn 2", 
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:share:7286373801984970753"
+      },
+      "post3": {
+        "title": "Article LinkedIn 3",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7285293287647637505"
+      },
+      "post4": {
+        "title": "Article LinkedIn 4",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7282334842820734978"
+      },
+      "post5": {
+        "title": "Article LinkedIn 5",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7265753096276897793"
+      },
+      "post6": {
+        "title": "Article LinkedIn 6",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7264609863454937088"
+      },
+      "post7": {
+        "title": "Article LinkedIn 7",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7262854490381303808"
+      },
+      "post8": {
+        "title": "Article LinkedIn 8",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7262183552841138176"
+      },
+      "post9": {
+        "title": "Article LinkedIn 9",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7309328268548075521?collapsed=1"
+      },
+      "post10": {
+        "title": "Article LinkedIn 10",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7315887103853121540?collapsed=1"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "subtitle": "Discutons de votre prochain projet",
+    "description": "Je suis toujours intéressé par de nouvelles opportunités et collaborations. N'hésitez pas à me contacter pour discuter de votre projet.",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer via WhatsApp",
+      "sending": "Ouverture de WhatsApp...",
+      "success": "WhatsApp ouvert ! Votre message est prêt à être envoyé.",
+      "error": "Erreur lors de l'ouverture de WhatsApp."
+    },
+    "info": {
+      "email": "abdelaziz.elhathout@gmail.com",
+      "phone": "+212 615 919 437",
+      "whatsapp": "+212 615 919 437",
+      "location": "Casablanca, Maroc",
+      "availability": "Disponible pour de nouveaux projets",
+      "response": "Réponse sous 24h"
+    },
+    "social": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "Email",
+      "whatsapp": "WhatsApp"
+    },
+    "whatsapp": {
+      "title": "Contactez-moi sur WhatsApp",
+      "message": "Bonjour ! Je suis intéressé par vos services de développement web.",
+      "send": "Ouvrir WhatsApp"
+    }
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "madeWith": "Fait avec",
+    "by": "par AbdelazizElh Elhathout"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "retry": "Réessayer",
+    "close": "Fermer",
+    "open": "Ouvrir",
+    "download": "Télécharger",
+    "view": "Voir",
+    "readMore": "Lire plus",
+    "readLess": "Lire moins"
+  }
+}

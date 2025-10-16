@@ -1,0 +1,425 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "clients": "Clients",
+    "recommendations": "Recommendations",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "AbdelazizElh Elhathout",
+    "title": "Full Stack Developer",
+    "description": "Passionate about creating innovative and performant web solutions. Specialized in developing modern applications with the latest technologies.",
+    "cta": {
+      "projects": "View my projects",
+      "contact": "Contact me"
+    }
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "Passionate developer with solid technical expertise",
+    "bio": {
+      "p1": "I am AbdelazizElh Elhathout, a Full Stack developer passionate about creating innovative web solutions. With several years of experience in developing modern web applications, I specialize in creating exceptional user experiences.",
+      "p2": "My expertise covers the entire technology stack, from frontend to backend, including databases and deployment. I am constantly seeking new technologies and best practices to improve my skills.",
+      "p3": "Currently, I work at Decq Print Maroc as a Full Stack developer, where I contribute to the development of innovative online printing solutions."
+    },
+    "skills": {
+      "title": "Technical skills",
+      "frontend": {
+        "title": "Frontend",
+        "items": ["React", "Vue.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": ["PHP", "Laravel", "Symfony", "Node.js", "Python", "RESTful APIs", "GraphQL", "MySQL", "PostgreSQL"]
+      },
+      "devops": {
+        "title": "DevOps & Tools",
+        "items": ["Docker", "Git", "GitHub", "CI/CD", "Linux", "AWS", "Nginx", "Composer", "NPM"]
+      }
+    },
+    "softSkills": {
+      "title": "Soft skills",
+      "items": ["Teamwork", "Communication", "Problem solving", "Project management", "Continuous learning", "Adaptability"]
+    }
+  },
+  "projects": {
+    "title": "My projects",
+    "subtitle": "Discover some of my recent achievements",
+    "viewAll": "View all projects",
+    "viewCode": "View code",
+    "liveDemo": "Live demo",
+    "items": {
+      "decq": {
+        "title": "Full-Stack Developer (Decq Print)",
+        "period": "2024-Present",
+        "description": "Industrial production management solution with backend APIs, logistics platform and complete CRUD interfaces.",
+        "details": {
+          "backend": "APIs (machine park management, production orchestration, capacity analysis), logistics platform (automated documents, AWS S3 integration)",
+          "frontend": "CRUD interfaces, visual planning, dashboards, orders module (dynamic PDFs)",
+          "stack": "Symfony/Vue.js, REST API, Twig, Docker, AWS, DOMPDF"
+        },
+        "technologies": ["Symfony", "Vue.js", "REST API", "Twig", "Docker", "AWS", "DOMPDF"],
+        "github": "https://github.com/decq-print",
+        "demo": "https://decq.com/",
+        "category": "Full-Stack Development"
+      },
+      "wobz": {
+        "title": "Full-Stack Developer (WObz Technologie)",
+        "period": "2023-2024",
+        "description": "E-commerce and financial management solution with Magento 2 integration and complete management workflow.",
+        "details": {
+          "backend": "Magento 2 integration (order import, stock sync), Management workflow (orders, S3 files), Financial module (SEPA payments, document generation)",
+          "frontend": "Order dashboard, customer management",
+          "stack": "Symfony/Vue.js, REST API, Twig, Docker, AWS, RabbitMQ, GoCardless, Magento 2 API"
+        },
+        "technologies": ["Symfony", "Vue.js", "Magento 2", "RabbitMQ", "GoCardless", "AWS", "Docker"],
+        "github": "https://github.com/wobz-tech",
+        "demo": "#",
+        "category": "Full-Stack Development"
+      },
+      "gestion-bureaux": {
+        "title": "Engineering Office Management (ADMDI)",
+        "period": "05/2023",
+        "description": "Engineering office management system with client/project modules and multi-currency financial management.",
+        "details": {
+          "features": "Client/project modules + financial (multi-currency, invoicing), User role management (admin/assistants)",
+          "stack": "PHP, MySQL, Bootstrap, JavaScript, DOMPDF"
+        },
+        "technologies": ["PHP", "MySQL", "Bootstrap", "JavaScript", "DOMPDF"],
+        "github": "https://github.com/elhathoute/Gestion_Bureaux_Etudes",
+        "demo": "#",
+        "category": "Web Development"
+      },
+      "youtrain": {
+        "title": "YouTrain™ Booking (YOUCODE)",
+        "period": "11/2022",
+        "description": "Railway booking platform with complete network management and integrated search engine.",
+        "details": {
+          "features": "Complete network management (cities/stations/trains), Search engine and integrated ticketing",
+          "stack": "Laravel, MySQL, Bootstrap"
+        },
+        "technologies": ["Laravel", "MySQL", "Bootstrap"],
+        "github": "https://github.com/elhathoute/TrainBooking",
+        "demo": "#",
+        "category": "Web Development"
+      },
+      "holt-forecasting": {
+        "title": "Sales Forecasting App with Holt's Method",
+        "period": "2024",
+        "description": "Streamlit application for sales forecasting using Holt's double exponential smoothing method.",
+        "details": {
+          "features": "Excel-based product database (EAN codes), 12-month historical data input, Customizable forecast period (1-12 months), CSV export functionality, Responsive design",
+          "stack": "Python, Streamlit, Pandas, NumPy, Matplotlib, Excel"
+        },
+        "technologies": ["Python", "Streamlit", "Pandas", "NumPy", "Matplotlib", "Excel"],
+        "github": "https://github.com/elhathoute/holt-sales-forecasting",
+        "demo": "https://holt-sales-forecasting.streamlit.app/",
+        "category": "Data Science"
+      }
+    }
+  },
+  "experience": {
+    "title": "Professional experience",
+    "subtitle": "My journey and achievements",
+    "current": "Current",
+    "items": {
+      "decq-print": {
+        "title": "Full Stack Developer",
+        "company": "Decq Print Maroc",
+        "period": "June 2024 - Present",
+        "location": "Casablanca, Morocco",
+        "description": "Development of online printing solutions with Laravel and Vue.js. Backend architecture management and performance optimization."
+      },
+      "wobz": {
+        "title": "Full Stack Developer",
+        "company": "Wobz Technologies Maroc",
+        "period": "June 2023 - June 2024",
+        "location": "Casablanca, Morocco",
+        "description": "Development of web applications for reusable container customization. Collaboration with the French team."
+      },
+      "admdi": {
+        "title": "Full Stack Developer Intern",
+        "company": "ADMDI",
+        "period": "May 2023 - June 2023",
+        "location": "Agadir, Morocco",
+        "description": "End-of-studies internship in web development and digital marketing. Creation of custom web applications."
+      },
+      "freelance": {
+        "title": "Freelance Developer",
+        "company": "Freelance",
+        "period": "January 2022 - April 2023",
+        "location": "Youssoufia, Morocco",
+        "description": "Development of applications and websites for various clients. Complete project management from A to Z."
+      }
+    },
+    "education": {
+      "title": "Education",
+      "items": {
+        "youcode": {
+          "title": "Full Stack Web Development",
+          "school": "YouCode",
+          "period": "2022 - 2023",
+          "location": "Youssoufia, Morocco",
+          "description": "Intensive training in web development with focus on modern technologies and best practices."
+        },
+        "university": {
+          "title": "Bachelor in Science and Technology",
+          "school": "Cadi Ayyad University",
+          "period": "2019 - 2022",
+          "location": "Marrakech, Morocco",
+          "description": "Training in computer science and information technology with specialization in software development."
+        }
+      }
+    },
+    "certifications": {
+      "title": "Certifications",
+      "items": {
+        "fstg-recommendation": {
+          "title": "Letter of Recommendation (FSTG Marrakech)",
+          "issuer": "FSTG Marrakech",
+          "date": "May 2021",
+          "location": "MARRAKECH, MOROCCO",
+          "description": "Recommendation letter from Prof. Younes Zouani (Java Spring Boot professor) at Faculty of Sciences and Techniques Gueliz.",
+          "pdf": "https://elhathoutwobz.github.io/portfolio_2024/assets/pdf/certif/java-jee.pdf"
+        },
+        "sql-intermediate": {
+          "title": "SQL (Intermediate) Certificate",
+          "issuer": "HackerRank",
+          "date": "December 2022",
+          "description": "Intermediate SQL certification from HackerRank demonstrating proficiency in complex queries, joins, and database operations.",
+          "pdf": "https://elhathoutwobz.github.io/portfolio_2024/assets/pdf/certif/sql_intermediate.pdf"
+        },
+        "sql-basic": {
+          "title": "SQL (Basic) Certificate",
+          "issuer": "HackerRank",
+          "date": "November 2022",
+          "description": "Basic SQL certification from HackerRank covering fundamental database concepts and query writing skills.",
+          "pdf": "https://elhathoutwobz.github.io/portfolio_2024/assets/pdf/certif/sql_basic.pdf"
+        },
+        "symfony-basics": {
+          "title": "PHP SYMFONY BASICS",
+          "issuer": "CodeSignal",
+          "date": "March 2025",
+          "description": "Fundamentals of PHP Symfony framework certification from CodeSignal covering basic concepts and architecture.",
+          "pdf": "https://elhathoutwobz.github.io/portfolio_2024/assets/pdf/certif/certificate-symfony-basic.pdf"
+        },
+        "symfony-mvc-todo": {
+          "title": "Building a MVC ToDo App with Symfony",
+          "issuer": "CodeSignal",
+          "date": "April 2025",
+          "description": "Developed a full-featured ToDo application using Symfony MVC architecture, implementing: task management, user authentication, and responsive interface.",
+          "pdf": "https://elhathoutwobz.github.io/portfolio_2024/assets/pdf/certif/certificate-mvc-symfony.pdf"
+        }
+      }
+    }
+  },
+  "clients": {
+    "title": "Our clients",
+    "subtitle": "Organizations that trust us",
+    "description": "We have had the pleasure of working with renowned organizations from both public and private sectors to develop innovative and performant web solutions.",
+    "items": {
+      "mtedd": {
+        "name": "Ministry of Energy Transition and Sustainable Development",
+        "description": "Complete refactoring of the ministry's current website with WordPress. Architecture improvement, performance optimization and user interface modernization for better citizen experience.",
+        "website": "https://www.mtedd.gov.ma/",
+        "sector": "Public sector",
+        "location": "Rabat, Morocco",
+        "logo": "/assets/img/clients/mtedd-logoFR-2048x593.png"
+      },
+      "houdamanouzi": {
+        "name": "Houda Manouzi",
+        "description": "Creation of custom web solutions and application development for innovative entrepreneurial projects.",
+        "website": "https://houdamanouzi.ma/",
+        "sector": "Entrepreneurship",
+        "location": "Morocco",
+        "logo": "/assets/img/clients/houdamanouzi-logo.jpg"
+      },
+      "stayinmedia": {
+        "name": "StayInMedia",
+        "description": "Development of digital platforms and web solutions for the media and entertainment industry.",
+        "website": "https://www.stayinmedia.ma",
+        "sector": "Media & Entertainment",
+        "location": "Casablanca, Morocco",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmfOGnGZ6K0tln7nAhcN0TEUiVpA929p8Bg&s"
+      },
+      "aliabencheikh": {
+        "name": "Dr. Alia Bencheikh",
+        "description": "Development of web solutions for the medical sector and creation of medical practice management platforms.",
+        "website": "https://draliabencheikh.ma",
+        "sector": "Health & Medicine",
+        "location": "Morocco",
+        "logo": "https://draliabencheikh.ma/img/doctor-image/logo-removebg-preview.png"
+      },
+      "youssef-bijouterie": {
+        "name": "Youssef Jewelry Témara",
+        "description": "Creation of an online store for jewelry with order management system and secure payments.",
+        "website": "https://youssefbijouterie.ma/",
+        "sector": "Jewelry & Luxury",
+        "location": "Témara, Morocco",
+        "logo": "https://youssefbijouterie.ma/assets/img/watch-image/logoYoussef-0001%20-1.jpg"
+      },
+      "sidimaarouf": {
+        "name": "Multidisciplinary Practice Sidi Maarouf",
+        "description": "Development of a web platform for a multidisciplinary medical practice with appointment booking system.",
+        "website": "https://cabinetpluridisciplinairesidimaarouf.ma/",
+        "sector": "Health & Medicine",
+        "location": "Casablanca, Morocco",
+        "logo": "https://cabinetpluridisciplinairesidimaarouf.ma/assets/img/logo.png"
+      },
+      "immo-pilot": {
+        "name": "Immo Pilot",
+        "description": "Creation of a real estate platform with advanced search system and real estate property management.",
+        "website": "https://immo-pilot.ma/",
+        "sector": "Real Estate",
+        "location": "Morocco",
+        "logo": "https://immo-pilot.ma/logo-immo-pilot.png"
+      },
+      "smiledesign": {
+        "name": "Smile Design Dental Clinic",
+        "description": "Development of a professional website for a dental clinic with online appointment booking system.",
+        "website": "https://cdpc.kesug.com/",
+        "sector": "Health & Dental",
+        "location": "Morocco",
+        "logo": "https://www.dentiste-mohammedia.com/wp-content/uploads/2024/06/logo-1.png"
+      }
+    }
+  },
+  "recommendations": {
+    "title": "📝 Professional Recommendations",
+    "subtitle": "What my colleagues and collaborators say",
+    "items": {
+      "fouad": {
+        "name": "Fouad Houdda",
+        "position": "Full Stack JAVA/Angular Developer",
+        "text": "I confidently recommend AbdelazizElh as a dedicated, competent and highly motivated developer. Throughout our collaboration, he has consistently demonstrated solid technical skills as well as a proactive mindset."
+      },
+      "mounir": {
+        "name": "Mounir El Bakkali 🇵🇸",
+        "position": "Software Engineer at iMedia24 GmbH",
+        "text": "I am pleased to recommend AbdelazizElh, a very competent full stack developer with whom I had the pleasure of working on several projects. He excels in translating client needs into concrete solutions and masters both backend and frontend."
+      },
+      "paul": {
+        "name": "Paul Roux",
+        "position": "Team Leader at Decq",
+        "text": "I am delighted to recommend AbdelazizElh, with whom I have been working for a year and a half at Decq. He has established himself as a reliable, rigorous and curious professional. He quickly analyzes situations and makes effective decisions. His kindness and enthusiasm make working alongside him very pleasant. I warmly recommend him."
+      },
+      "anas": {
+        "name": "Anas Barnouch",
+        "position": "Master's Student in Big Data & Cloud Computing",
+        "text": "I had the pleasure of working with AbdelazizElh at YouCode school. He demonstrates seriousness, technical competence and good team spirit. AbdelazizElh is a valuable asset for any development team."
+      },
+      "quentin": {
+        "name": "Quentin Dessartine",
+        "position": "Lead Developer",
+        "text": "I collaborated with AbdelazizElh, a full stack developer remarkable for his seriousness, responsiveness and professionalism. He always places client needs at the center of his priorities, anticipates problems, proposes concrete solutions and ensures impeccable code quality. A rare profile that I recommend without hesitation."
+      },
+      "nouhaila": {
+        "name": "Nouhaila Gourram",
+        "position": "Software Engineer",
+        "text": "AbdelazizElh is a reliable and competent full stack developer. He has a sharp analytical mind, writes clean code and approaches each mission with seriousness. An excellent collaborator with strong potential."
+      }
+    }
+  },
+  "blog": {
+    "title": "📝 Blog & Articles",
+    "subtitle": "My latest articles and thoughts on web development",
+    "description": "Discover my LinkedIn articles where I share my experiences, tips and thoughts on web development, technologies and entrepreneurship.",
+    "items": {
+      "post1": {
+        "title": "LinkedIn Article 1",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7290481270030028802"
+      },
+      "post2": {
+        "title": "LinkedIn Article 2", 
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:share:7286373801984970753"
+      },
+      "post3": {
+        "title": "LinkedIn Article 3",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7285293287647637505"
+      },
+      "post4": {
+        "title": "LinkedIn Article 4",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7282334842820734978"
+      },
+      "post5": {
+        "title": "LinkedIn Article 5",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7265753096276897793"
+      },
+      "post6": {
+        "title": "LinkedIn Article 6",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7264609863454937088"
+      },
+      "post7": {
+        "title": "LinkedIn Article 7",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7262854490381303808"
+      },
+      "post8": {
+        "title": "LinkedIn Article 8",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7262183552841138176"
+      },
+      "post9": {
+        "title": "LinkedIn Article 9",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7309328268548075521?collapsed=1"
+      },
+      "post10": {
+        "title": "LinkedIn Article 10",
+        "url": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7315887103853121540?collapsed=1"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact me",
+    "subtitle": "Let's discuss your next project",
+    "description": "I'm always interested in new opportunities and collaborations. Feel free to contact me to discuss your project.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send via WhatsApp",
+      "sending": "Opening WhatsApp...",
+      "success": "WhatsApp opened! Your message is ready to be sent.",
+      "error": "Error opening WhatsApp."
+    },
+    "info": {
+      "email": "abdelaziz.elhathout@gmail.com",
+      "phone": "+212 615 919 437",
+      "whatsapp": "+212 615 919 437",
+      "location": "Casablanca, Morocco",
+      "availability": "Available for new projects",
+      "response": "Response within 24h"
+    },
+    "social": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "Email",
+      "whatsapp": "WhatsApp"
+    },
+    "whatsapp": {
+      "title": "Contact me on WhatsApp",
+      "message": "Hello! I'm interested in your web development services.",
+      "send": "Open WhatsApp"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "madeWith": "Made with",
+    "by": "by AbdelazizElh Elhathout"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "close": "Close",
+    "open": "Open",
+    "download": "Download",
+    "view": "View",
+    "readMore": "Read more",
+    "readLess": "Read less"
+  }
+}
