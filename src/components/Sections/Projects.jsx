@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, Github, Eye, Tag } from 'lucide-react';
+import { ExternalLink, Github, Eye, Tag, Download, FileText } from 'lucide-react';
 import Card from '../UI/Card';
 import Button from '../UI/Button';
 
@@ -21,6 +21,9 @@ const Projects = () => {
     details: project.details,
     github: project.github,
     demo: project.demo,
+    image: project.image,
+    status: project.status,
+    downloads: project.downloads,
     featured: key === 'decq' || key === 'wobz' // Marquer les projets récents comme vedettes
   }));
 
@@ -90,12 +93,22 @@ const Projects = () => {
               >
                 <Card className="h-full overflow-hidden group">
                   {/* Project Image */}
-                  <div className="relative h-48 bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-900/20 dark:to-primary-800/20 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-primary-600/20 flex items-center justify-center">
-                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
-                        <Tag className="w-8 h-8 text-white" />
+                  <div className="relative h-48 overflow-hidden">
+                    {project.image ? (
+                      <img 
+                        src={project.image} 
+                        alt={project.title}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-900/20 dark:to-primary-800/20 flex items-center justify-center">
+                        <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                          <Tag className="w-8 h-8 text-white" />
+                        </div>
                       </div>
-                    </div>
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                     {project.featured && (
                       <div className="absolute top-4 left-4 bg-primary-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                         Projet vedette
@@ -112,6 +125,11 @@ const Projects = () => {
                       {project.period && (
                         <p className="text-sm text-primary-600 dark:text-primary-400 font-medium mb-2">
                           {project.period}
+                          {project.status && (
+                            <span className="ml-2 px-2 py-1 bg-orange-100 dark:bg-orange-900/20 text-orange-700 dark:text-orange-400 rounded-full text-xs">
+                              {project.status}
+                            </span>
+                          )}
                         </p>
                       )}
                       <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
@@ -135,26 +153,52 @@ const Projects = () => {
 
                     {/* Actions */}
                     <div className="flex space-x-3 pt-4">
-                      {project.github && project.github !== '#' && (
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          onClick={() => window.open(project.github, '_blank')}
-                          className="flex-1"
-                        >
-                          <Github size={16} className="mr-2" />
-                          {t('projects.viewCode')}
-                        </Button>
-                      )}
-                      {project.demo && project.demo !== '#' && (
-                        <Button
-                          size="sm"
-                          onClick={() => window.open(project.demo, '_blank')}
-                          className="flex-1"
-                        >
-                          <ExternalLink size={16} className="mr-2" />
-                          {t('projects.liveDemo')}
-                        </Button>
+                      {project.downloads ? (
+                        // CV Downloads
+                        <div className="flex space-x-2 w-full">
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => window.open(project.downloads.fr, '_blank')}
+                            className="flex-1"
+                          >
+                            <FileText size={16} className="mr-2" />
+                            CV FR
+                          </Button>
+                          <Button
+                            size="sm"
+                            onClick={() => window.open(project.downloads.en, '_blank')}
+                            className="flex-1"
+                          >
+                            <Download size={16} className="mr-2" />
+                            CV EN
+                          </Button>
+                        </div>
+                      ) : (
+                        // Regular project actions
+                        <>
+                          {project.github && project.github !== '#' && (
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              onClick={() => window.open(project.github, '_blank')}
+                              className="flex-1"
+                            >
+                              <Github size={16} className="mr-2" />
+                              {t('projects.viewCode')}
+                            </Button>
+                          )}
+                          {project.demo && project.demo !== '#' && (
+                            <Button
+                              size="sm"
+                              onClick={() => window.open(project.demo, '_blank')}
+                              className="flex-1"
+                            >
+                              <ExternalLink size={16} className="mr-2" />
+                              {t('projects.liveDemo')}
+                            </Button>
+                          )}
+                        </>
                       )}
                     </div>
                   </div>

@@ -28,3 +28,6 @@ const AnimatedSection = ({ id, className = '', children }) => {
 };
 
 export default AnimatedSection;
+
+
+

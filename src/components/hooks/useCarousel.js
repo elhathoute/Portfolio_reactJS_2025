@@ -54,3 +54,6 @@ export const useCarousel = (items = [], itemsPerView = 1, autoPlayInterval = 600
     toggleAutoPlay
   };
 };
+
+
+

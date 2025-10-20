@@ -46,3 +46,6 @@ export const hoverScale = {
 };
 
 export const viewportOnce = { once: true };
+
+
+

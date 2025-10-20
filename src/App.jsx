@@ -2,6 +2,7 @@ import React from 'react';
 import './i18n';
 import Header from './components/Layout/Header';
 import Hero from './components/Sections/Hero';
+import CVDownload from './components/Sections/CVDownload';
 import About from './components/Sections/About';
 import Projects from './components/Sections/Projects';
 import Experience from './components/Sections/Experience';
@@ -17,6 +18,7 @@ function App() {
       <Header />
       <main>
           <Hero />
+          <CVDownload />
           <About />
           <Projects />
           <Experience />

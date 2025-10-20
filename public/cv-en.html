@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume - Abdelaziz Elhathout (EN)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --primary: #2563eb; --light: #f3f4f6; --text: #111827; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; color: var(--text); font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    .page { width: 210mm; min-height: 297mm; margin: 0 auto; background: #fff; }
+    .container { display: grid; grid-template-columns: 40% 60%; gap: 20px; padding: 28px; }
+    .left { background: var(--light); padding: 20px; border-radius: 10px; }
+    .right { padding: 0 4px; }
+    .name { font-size: 26px; font-weight: 700; margin: 0 0 6px; }
+    .title { color: #758A93; font-weight: 600; margin: 0 0 16px; line-height: 1.25; hyphens: auto; word-break: normal; }
+    .section { margin: 18px 0; }
+    .section h3 { font-size: 14px; text-transform: uppercase; letter-spacing: .06em; margin: 0 0 10px; color: var(--primary); }
+    .pill { display: inline-block; background: #e5e7eb; border-radius: 999px; padding: 6px 10px; margin: 4px 6px 0 0; font-size: 12px; }
+    .muted { color: #4b5563; }
+    .list { margin: 6px 0 0 0; padding-left: 18px; }
+    .list li { margin: 4px 0; }
+    .header { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 16px; text-align: center; }
+    .header .name, .header .title { text-align: center; }
+    .header .avatar { margin-bottom: 2px; }
+    .avatar { width: 64px; height: 64px; border-radius: 10px; object-fit: cover; border: 2px solid #e5e7eb; background:#fff; }
+    .divider { height: 1px; background: #e5e7eb; margin: 10px 0; }
+    .meta { font-size: 12px; line-height: 1.6; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; }
+    .job { margin-bottom: 12px; }
+    .job .role { font-weight: 600; }
+    .job .when { font-size: 12px; color: #6b7280; }
+    .job ul { margin: 6px 0 0 18px; }
+    .badge { display:inline-block; border:1px solid #e5e7eb; border-radius:8px; padding:6px 8px; margin:4px 6px 0 0; font-size:12px; background:#fff; }
+    h3 { break-after: avoid; page-break-after: avoid; }
+    ul, li, .job { break-inside: avoid; page-break-inside: avoid; }
+    .page-break { break-before: page; page-break-before: always; }
+    @page { size: A4; margin: 16mm 14mm; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="container">
+      <aside class="left">
+        <div class="header">
+          <img class="avatar" src="./assets/img/logo_2.jpeg" alt="Photo" onerror="this.style.display='none'" />
+          <div>
+            <h1 class="name">Abdelaziz Elhathout</h1>
+            <div class="title">Full‑Stack PHP/Vue.js Developer | Hexagonal Architecture & Design Patterns | SOLID & PHPUnit | REST APIs & Vue 3</div>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Contact</h3>
+          <div class="meta">
+            <div><strong>City:</strong> Casablanca, Morocco</div>
+            <div><strong>Email:</strong> <a href="mailto:abdelaziz.e.perso@gmail.com">abdelaziz.e.perso@gmail.com</a></div>
+            <div><strong>Phone:</strong> <a href="tel:+212630258502">+212 630 258 502</a></div>
+            <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/abdelaziz-elhathout-191290208/" target="_blank" rel="noreferrer">/in/abdelaziz-elhathout-191290208</a></div>
+            <div><strong>GitHub:</strong> <a href="https://github.com/elhathoute" target="_blank" rel="noreferrer">github.com/elhathoute</a></div>
+            <div><strong>Portfolio:</strong> <a href="https://abdelaziz-elhathoute.netlify.app/" target="_blank" rel="noreferrer">abdelaziz-elhathoute.netlify.app</a></div>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Languages</h3>
+          <ul class="list">
+            <li><strong>Arabic</strong>: native</li>
+            <li><strong>French</strong>: intermediate</li>
+            <li><strong>English</strong>: intermediate</li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3>Soft Skills</h3>
+          <div>
+            <span class="badge">Teamwork</span>
+            <span class="badge">Communication</span>
+            <span class="badge">Problem Solving</span>
+            <span class="badge">Project Management</span>
+            <span class="badge">Continuous Learning</span>
+            <span class="badge">Adaptability</span>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Skills</h3>
+          <div>
+            <span class="pill">PHP</span>
+            <span class="pill">Symfony</span>
+            <span class="pill">Laravel</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">Vue.js</span>
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+            <span class="pill">TailwindCSS</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Tools</h3>
+          <div>
+            <span class="badge">Git</span>
+            <span class="badge">Docker</span>
+            <span class="badge">Composer</span>
+            <span class="badge">REST API</span>
+            <span class="badge">Postman</span>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Methodologies</h3>
+          <div class="meta">MVC, Clean Code, Hexagonal Architecture, Scrum, Agile Methods</div>
+        </div>
+      </aside>
+      <main class="right">
+        <section class="section">
+          <h3>Professional Profile</h3>
+          <p>Full‑Stack <strong>PHP/Symfony/Laravel</strong> and <strong>Vue.js</strong> developer combining technical expertise with <strong>best practices</strong> to build <strong>high‑performance</strong>, <strong>secure</strong>, and <strong>maintainable</strong> web applications from technical analysis to production. Strong focus on <strong>SOLID</strong> principles, <strong>automated testing (PHPUnit)</strong>, and modular architectures (<strong>hexagonal</strong>).</p>
+        </section>
+        <div class="divider"></div>
+        <section class="section">
+          <h3>Professional Experience</h3>
+          <div class="job">
+            <div class="role">Full-Stack Developer – Decq Print • Casablanca <span class="when">05/2024 – Present</span></div>
+            <ul>
+              <li>Built an online printing solution from order to delivery, with a SaaS in progress for centralized management.</li>
+              <li>Back-end: APIs (machine park, production orchestration, capacity), AWS S3 integration, PDF documents.</li>
+              <li>Front-end: CRUD interfaces, visual planning, dashboards, and orders module.</li>
+              <li>Stack: Symfony, Vue.js, Docker, AWS, REST API, hexagonal architecture.</li>
+            </ul>
+          </div>
+          <div class="job">
+            <div class="role">Full-Stack Developer – Wobz Technologies • Casablanca <span class="when">06/2023 – 05/2024</span></div>
+            <ul>
+              <li>Developed features for reusable container customization.</li>
+              <li>Integrations: payments (SEPA via GoCardless), Magento 2 (orders, stocks), AWS S3.</li>
+              <li>Workflow design: orders, synchronization, automated documents.</li>
+              <li>Stack: Symfony, Vue.js, Docker, AWS, RabbitMQ, GoCardless, REST API.</li>
+            </ul>
+          </div>
+          <div class="job">
+            <div class="role">Web Developer – ADMDI • Agadir <span class="when">05/2023 – 06/2023</span></div>
+            <ul>
+              <li>Web development and digital solutions (clients/projects modules, invoicing, roles).</li>
+              <li>Stack: PHP, JavaScript, MySQL, Bootstrap, PDF generation (DOMPDF).</li>
+            </ul>
+          </div>
+          <div class="job">
+            <div class="role">Full Stack Developer – Freelance <span class="when">02/2022 – 05/2023</span></div>
+            <ul>
+              <li>Built management apps (inventory, booking, production).</li>
+              <li>Implemented REST APIs with Symfony/Laravel; Vue.js/TailwindCSS front-end integration.</li>
+              <li>Performance optimization and code maintenance; Clean Code and SOLID principles.</li>
+            </ul>
+          </div>
+        </section>
+        <div class="divider"></div>
+        <section class="section page-break">
+          <h3>Education</h3>
+          <ul class="list">
+            <li><strong>2022 – 2023</strong> · Simplon/YouCode Certificate (Youssoufia) – YouCode, IT School. Intensive web development program (Learning By Doing, 800h of hands‑on coding). Educational partnership OCP‑Simplon.</li>
+            <li><strong>2020 – 2021</strong> · Bachelor in Distributed Information Systems – Cadi Ayyad University (Marrakech). Focus on distributed architectures (J2EE), advanced web programming, and distributed systems.</li>
+            <li><strong>2018 – 2020</strong> · DEUST MIPC – Cadi Ayyad University (Marrakech). Multidisciplinary core: Computer Science & Mathematics, Fundamental Physics & Chemistry; focus on physico‑chemical phenomena and mathematical tools.</li>
+            <li><strong>2011 – 2017</strong> · Baccalaureate in Physical Sciences – High School (Taroudant). Physical Sciences and Chemistry track.</li>
+          </ul>
+        </section>
+        <div class="divider"></div>
+        <section class="section">
+          <h3>Projects</h3>
+          <ul class="list">
+            <li><strong>React Portfolio 2025</strong> — React 18, Vite, Tailwind, Framer Motion, i18next, SEO, dark/light.</li>
+            <li><strong>Nobty | MyPlace (2024)</strong> — Vue.js SaaS front for hairdresser/barber appointment booking. <em>(In development)</em></li>
+            <li><strong>DarTabkh (2024)</strong> — Vue.js SaaS front for food delivery/restaurant. <em>(In development)</em></li>
+            <li><strong>Holt Sales Forecasting (2024)</strong> — Streamlit sales forecasting app (Holt). Stack: Python, Pandas, NumPy.</li>
+            <li><strong>Industrial Production Management (Decq Print, 2024–Present)</strong> — APIs (machine park, orchestration), logistics platform (documents, S3), dashboards and planning. Stack: Symfony/Vue.js, REST, Twig, Docker, AWS, DOMPDF.</li>
+            <li><strong>E‑commerce & Financial Management (Wobz, 2023–2024)</strong> — Magento 2 integration (orders, stock), orders workflow/S3, SEPA payments (GoCardless), automated documents. Stack: Symfony/Vue.js, Docker, AWS, RabbitMQ.</li>
+            <li><strong>Engineering Office Management (ADMDI, 05/2023)</strong> — Clients/projects, user roles, multi‑currency invoicing. Stack: PHP, MySQL, Bootstrap, JS, DOMPDF.</li>
+            <li><strong>YouTrain™ Booking (YOUCODE, 11/2022)</strong> — Railway booking, network management, search engine, ticketing. Stack: Laravel, MySQL, Bootstrap.</li>
+          </ul>
+        </section>
+        <div class="divider"></div>
+        <section class="section">
+          <h3>Interests</h3>
+          <p>Technology, sports.</p>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
+
+

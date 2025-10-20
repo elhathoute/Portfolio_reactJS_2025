@@ -31,3 +31,6 @@ export const useTranslationEntries = (key) => {
   const data = t(key, { returnObjects: true });
   return Object.entries(data);
 };
+
+
+

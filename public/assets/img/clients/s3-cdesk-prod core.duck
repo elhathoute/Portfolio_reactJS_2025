@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Protocol</key>
+	<string>s3</string>
+	<key>Provider</key>
+	<string>WobzTechnologies</string>
+	<key>Nickname</key>
+	<string>cdeskcore</string>
+	<key>UUID</key>
+	<string>d4e8b08a-680d-46d4-82da-e60742114bd6</string>
+	<key>Hostname</key>
+	<string>sos-ch-gva-2.exo.io</string>
+	<key>Port</key>
+	<string>443</string>
+	<key>Username</key>
+	<string>EXO35e2e3e3049cf8efd9921ade</string>
+	<key>Password</key>
+	<string>09ZBac81prTKuYxw_VUJZhxi2z3gtFwG8ZWA9NRryFI</string>
+	<key>Path</key>
+	<string>/cdeskcore</string>
+	<key>Regions</key>
+        <array>
+            <string>ch-gva-2</string>
+        </array>
+</dict>
+</plist>

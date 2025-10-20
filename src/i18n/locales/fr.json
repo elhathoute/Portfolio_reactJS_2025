@@ -31,11 +31,11 @@
       "title": "Compétences techniques",
       "frontend": {
         "title": "Frontend",
-        "items": ["React", "Vue.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"]
+        "items": ["Vue.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"]
       },
       "backend": {
         "title": "Backend",
-        "items": ["PHP", "Laravel", "Symfony", "Node.js", "Python", "RESTful APIs", "GraphQL", "MySQL", "PostgreSQL"]
+        "items": ["PHP", "Laravel", "Symfony", "Node.js", "RESTful APIs", "GraphQL", "MySQL", "PostgreSQL"]
       },
       "devops": {
         "title": "DevOps & Outils",
@@ -66,7 +66,8 @@
         "technologies": ["Symfony", "Vue.js", "API REST", "Twig", "Docker", "AWS", "DOMPDF"],
         "github": "https://github.com/decq-print",
         "demo": "https://decq.com/",
-        "category": "Full-Stack Development"
+        "category": "Full-Stack Development",
+        "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=400&fit=crop&crop=center"
       },
       "wobz": {
         "title": "Développeur Full-Stack (WObz Technologie)",
@@ -80,7 +81,8 @@
         "technologies": ["Symfony", "Vue.js", "Magento 2", "RabbitMQ", "GoCardless", "AWS", "Docker"],
         "github": "https://github.com/wobz-tech",
         "demo": "#",
-        "category": "Full-Stack Development"
+        "category": "Full-Stack Development",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop&crop=center"
       },
       "gestion-bureaux": {
         "title": "Gestion Bureau D'études (ADMDI)",
@@ -93,7 +95,8 @@
         "technologies": ["PHP", "MySQL", "Bootstrap", "JavaScript", "DOMPDF"],
         "github": "https://github.com/elhathoute/Gestion_Bureaux_Etudes",
         "demo": "#",
-        "category": "Web Development"
+        "category": "Web Development",
+        "image": "https://www.shutterstock.com/image-photo/engineering-teamwork-planning-blueprint-office-600nw-2264233877.jpg"
       },
       "youtrain": {
         "title": "YouTrain™ Booking (YOUCODE)",
@@ -106,7 +109,8 @@
         "technologies": ["Laravel", "MySQL", "Bootstrap"],
         "github": "https://github.com/elhathoute/TrainBooking",
         "demo": "#",
-        "category": "Web Development"
+        "category": "Web Development",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0GwdklPaH9LS6-pgFe_6TkogGLdWrMfHnFw&s"
       },
       "holt-forecasting": {
         "title": "Sales Forecasting App with Holt's Method",
@@ -119,7 +123,70 @@
         "technologies": ["Python", "Streamlit", "Pandas", "NumPy", "Matplotlib", "Excel"],
         "github": "https://github.com/elhathoute/holt-sales-forecasting",
         "demo": "https://holt-sales-forecasting.streamlit.app/",
-        "category": "Data Science"
+        "category": "Data Science",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop&crop=center"
+      },
+      "portfolio-react": {
+        "title": "Portfolio React 2025",
+        "period": "2025",
+        "description": "Portfolio moderne et professionnel développé avec React, Tailwind CSS et Vite, mettant en valeur mes compétences en développement Full Stack.",
+        "details": {
+          "features": "Design moderne et responsive, Mode sombre/clair, Animations fluides avec Framer Motion, Support bilingue (Français/Anglais), Carousels interactifs, Formulaire de contact WhatsApp, SEO optimisé",
+          "stack": "React 18, Vite, Tailwind CSS, Framer Motion, i18next, Lucide React"
+        },
+        "technologies": ["React", "Vite", "Tailwind CSS", "Framer Motion", "i18next", "Lucide React"],
+        "github": "https://github.com/elhathoute/Portfolio_reactJS_2025",
+        "demo": "https://abdelaziz-elhathoute.netlify.app/",
+        "category": "Web Development",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=center"
+      },
+      "nobty-myplace": {
+        "title": "Nobty MyPlace Front SaaS",
+        "period": "2024",
+        "description": "Application SaaS frontend pour la réservation de créneaux chez les coiffeurs et barbiers, développée avec Vue.js.",
+        "details": {
+          "features": "Système de réservation de créneaux, Interface de gestion des rendez-vous, Architecture Vue.js moderne, Design responsive, Tableau de bord utilisateur, Gestion des disponibilités",
+          "stack": "Vue.js, JavaScript, CSS3, HTML5, UI/UX moderne"
+        },
+        "technologies": ["Vue.js", "JavaScript", "CSS3", "HTML5"],
+        "github": "https://github.com/elhathoute/Nobty_MyPlace_Front_Saas",
+        "demo": "#",
+        "category": "Web Development",
+        "status": "En cours de développement",
+        "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=400&fit=crop&crop=center"
+      },
+      "dartabkh-front": {
+        "title": "DarTabkh Front SaaS",
+        "period": "2024",
+        "description": "Application SaaS frontend pour la livraison de nourriture et les services de gestion de restaurants développée avec Vue.js.",
+        "details": {
+          "features": "Plateforme de livraison de nourriture, Interface de gestion de restaurant, Système de suivi des commandes, Architecture Vue.js moderne, Design responsive, Authentification utilisateur",
+          "stack": "Vue.js, JavaScript, CSS3, HTML5, UI/UX moderne"
+        },
+        "technologies": ["Vue.js", "JavaScript", "CSS3", "HTML5"],
+        "github": "https://github.com/elhathoute/DarTabkh-Front-Saas",
+        "demo": "#",
+        "category": "Web Development",
+        "status": "En cours de développement",
+        "image": "https://cdn.shopify.com/s/files/1/0267/8118/8171/files/blog-post-image_gourmethome.png?v=1707774060"
+      },
+      "cv-section": {
+        "title": "CV & Documents",
+        "period": "2025",
+        "description": "CV professionnel en français et anglais, format PDF optimisé pour l'impression et le partage numérique.",
+        "details": {
+          "features": "Design professionnel, Layout 40/60, Typographie optimisée, Page breaks intelligents, Couleurs cohérentes",
+          "stack": "HTML5, CSS3, Puppeteer, PDF Generation"
+        },
+        "technologies": ["HTML5", "CSS3", "Puppeteer", "PDF"],
+        "github": "#",
+        "demo": "#",
+        "category": "Documents",
+        "downloads": {
+          "fr": "/CV-Abdelaziz-Elhathout-FR.pdf",
+          "en": "/CV-Abdelaziz-Elhathout-EN.pdf"
+        },
+        "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=400&fit=crop&crop=center"
       }
     }
   },
@@ -421,5 +488,12 @@
     "view": "Voir",
     "readMore": "Lire plus",
     "readLess": "Lire moins"
+  },
+  "cvDownload": {
+    "title": "Consulter le CV en français et en anglais",
+    "subtitle": "CV professionnel optimisé pour l'impression et le partage numérique",
+    "viewFR": "Voir CV en Français",
+    "viewEN": "View CV in English",
+    "note": "Format PDF optimisé • Compatible mobile et desktop"
   }
 }
