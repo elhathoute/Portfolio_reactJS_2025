@@ -77,7 +77,7 @@ const Header = () => {
             className="flex items-center space-x-2"
           >
             <img 
-              src="/assets/img/logo_2.jpeg" 
+              src="/logo.jpeg" 
               alt="AbdelazizElh Elhathout" 
               className="w-10 h-10 rounded-full object-cover border-2 border-primary-200 dark:border-primary-700"
             />

@@ -28,6 +28,8 @@ async function run() {
   const inputs = [
     { in: path.join(publicDir, 'cv-fr.html'), out: path.join(publicDir, 'CV-Abdelaziz-Elhathout-FR.pdf') },
     { in: path.join(publicDir, 'cv-en.html'), out: path.join(publicDir, 'CV-Abdelaziz-Elhathout-EN.pdf') },
+    { in: path.join(publicDir, 'cover-letter-fr.html'), out: path.join(publicDir, 'Cover-Letter-Abdelaziz-Elhathout-FR.pdf') },
+    { in: path.join(publicDir, 'cover-letter-en.html'), out: path.join(publicDir, 'Cover-Letter-Abdelaziz-Elhathout-EN.pdf') },
   ]
 
   for (const i of inputs) {

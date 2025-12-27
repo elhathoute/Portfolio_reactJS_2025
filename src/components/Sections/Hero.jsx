@@ -144,7 +144,7 @@ const Hero = () => {
                 className="absolute inset-4 bg-white dark:bg-gray-800 rounded-full shadow-2xl flex items-center justify-center overflow-hidden"
               >
                 <img 
-                  src="/assets/img/logo_2.jpeg" 
+                  src="/logo.jpeg" 
                   alt="AbdelazizElh Elhathout" 
                   className="w-32 h-32 rounded-full object-cover"
                 />

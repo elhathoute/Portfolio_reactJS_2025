@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './i18n';
 import Header from './components/Layout/Header';
 import Hero from './components/Sections/Hero';
@@ -12,23 +13,38 @@ import Blog from './components/Sections/Blog';
 import Contact from './components/Sections/Contact';
 import Footer from './components/Layout/Footer';
 
+// Composant pour la page d'accueil
+const HomePage = () => {
+  return (
+    <main>
+      <Hero />
+      <CVDownload />
+      <About />
+      <Projects />
+      <Experience />
+      <Clients />
+      <Recommendations />
+      <Contact />
+    </main>
+  );
+};
+
+
 function App() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
-      <Header />
-      <main>
-          <Hero />
-          <CVDownload />
-          <About />
-          <Projects />
-          <Experience />
-          <Clients />
-          <Recommendations />
-          <Blog />
-          <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Header />
+              <HomePage />
+              <Footer />
+            </>
+          } />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

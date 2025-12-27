@@ -236,10 +236,10 @@ const Clients = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="space-y-2">
               <div className="text-3xl font-bold text-primary-600 dark:text-primary-400">
-                8+
+                {clients.length}+
               </div>
               <p className="text-gray-600 dark:text-gray-400">
-                Clients satisfaits
+                {t('clients.stats.satisfiedClients')}
               </p>
             </div>
             <div className="space-y-2">
@@ -247,7 +247,7 @@ const Clients = () => {
                 100%
               </div>
               <p className="text-gray-600 dark:text-gray-400">
-                Taux de satisfaction
+                {t('clients.stats.satisfactionRate')}
               </p>
             </div>
             <div className="space-y-2">
@@ -255,7 +255,7 @@ const Clients = () => {
                 24h
               </div>
               <p className="text-gray-600 dark:text-gray-400">
-                Temps de réponse
+                {t('clients.stats.responseTime')}
               </p>
             </div>
           </div>

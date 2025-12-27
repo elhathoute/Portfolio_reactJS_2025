@@ -70,7 +70,7 @@ const About = () => {
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <img 
-                    src="/assets/img/logo_2.jpeg" 
+                    src="/logo.jpeg" 
                     alt="AbdelazizElh Elhathout" 
                     className="w-16 h-16 rounded-full object-cover border-2 border-primary-200 dark:border-primary-700"
                   />

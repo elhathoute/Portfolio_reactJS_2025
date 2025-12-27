@@ -1,0 +1,414 @@
+/* Styles personnalisés pour BlogCourses */
+
+/* Animation personnalisée pour les cartes */
+.blog-course-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blog-course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Animation pour la barre de recherche */
+.search-input {
+  transition: all 0.2s ease-in-out;
+}
+
+.search-input:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Animation pour les filtres */
+.filter-button {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.filter-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.filter-button:hover::before {
+  left: 100%;
+}
+
+/* Animation pour l'indicateur "aucun résultat" */
+.no-results {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation pour les catégories dans les cartes */
+.category-tag {
+  transition: all 0.2s ease-in-out;
+}
+
+.category-tag:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation pour les niveaux */
+.level-badge {
+  transition: all 0.2s ease-in-out;
+}
+
+.level-badge:hover {
+  transform: scale(1.1);
+}
+
+/* Animation pour les boutons d'action */
+.action-button {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.action-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.action-button:hover::before {
+  left: 100%;
+}
+
+/* Animation pour les icônes */
+.category-icon {
+  transition: all 0.2s ease-in-out;
+}
+
+.category-icon:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* Animation pour le compteur de résultats */
+.results-counter {
+  animation: slideInLeft 0.3s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation pour les cartes lors du filtrage */
+.course-card-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.course-card-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.course-card-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.course-card-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* Styles pour le mode sombre */
+@media (prefers-color-scheme: dark) {
+  .blog-course-card {
+    background: linear-gradient(145deg, #1f2937, #111827);
+  }
+  
+  .search-input:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  }
+}
+
+/* Responsive animations */
+@media (max-width: 768px) {
+  .blog-course-card:hover {
+    transform: none; /* Désactiver l'animation hover sur mobile */
+  }
+  
+  .filter-button:hover::before {
+    left: -100%; /* Désactiver l'effet shimmer sur mobile */
+  }
+}
+
+/* Animation pour le chargement */
+.loading-skeleton {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Animation pour les étoiles de notation */
+.rating-star {
+  transition: all 0.2s ease-in-out;
+}
+
+.rating-star:hover {
+  transform: scale(1.2);
+  color: #fbbf24;
+}
+
+/* Animation pour les métadonnées */
+.metadata-item {
+  transition: all 0.2s ease-in-out;
+}
+
+.metadata-item:hover {
+  transform: translateX(2px);
+  color: #3b82f6;
+}
+
+/* Animation pour le bouton de reset */
+.reset-button {
+  transition: all 0.2s ease-in-out;
+}
+
+.reset-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* Animation pour les filtres mobiles */
+.mobile-filters {
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-filters.open {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation pour les icônes de catégorie dans les filtres */
+.filter-icon {
+  transition: all 0.2s ease-in-out;
+}
+
+.filter-button:hover .filter-icon {
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* Animation pour le chevron des filtres mobiles */
+.chevron-icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.chevron-icon.rotated {
+  transform: rotate(180deg);
+}
+
+/* Animation pour les cartes lors du changement de filtre */
+.course-grid {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animation pour l'indicateur de chargement */
+.loading-indicator {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation pour les transitions de page */
+.page-transition {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animation pour les tooltips */
+.tooltip {
+  animation: fadeInUp 0.2s ease-out;
+}
+
+/* Animation pour les notifications */
+.notification {
+  animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation pour les badges de niveau */
+.level-badge-beginner {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+}
+
+.level-badge-intermediate {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+}
+
+.level-badge-advanced {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+}
+
+/* Animation pour les cartes de cours */
+.course-card-image {
+  transition: all 0.3s ease-in-out;
+}
+
+.course-card:hover .course-card-image {
+  transform: scale(1.05);
+}
+
+/* Animation pour les boutons de catégorie */
+.category-button {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.category-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #3b82f6;
+  transition: all 0.2s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.category-button.active::after {
+  width: 100%;
+}
+
+/* Animation pour les icônes dans les cartes */
+.card-icon {
+  transition: all 0.3s ease-in-out;
+}
+
+.course-card:hover .card-icon {
+  transform: rotate(5deg) scale(1.1);
+  color: #3b82f6;
+}
+
+/* Animation pour les statistiques */
+.stats-item {
+  transition: all 0.2s ease-in-out;
+}
+
+.stats-item:hover {
+  transform: translateY(-2px);
+  color: #3b82f6;
+}
+
+/* Animation pour les transitions de contenu */
+.content-transition {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animation pour les éléments de chargement */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Animation pour les modales */
+.modal-overlay {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content {
+  animation: slideInUp 0.3s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

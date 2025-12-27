@@ -290,6 +290,22 @@
     "subtitle": "Organisations qui nous font confiance",
     "description": "Nous avons eu le plaisir de travailler avec des organisations de renom, du secteur public et privé, pour développer des solutions web innovantes et performantes.",
     "items": {
+      "khiryemma": {
+        "name": "Khir Yemma",
+        "description": "Khir Yemma a été créée pour vous proposer des produits naturels, authentiques et de haute qualité, soigneusement élaborés dans le respect de votre santé.",
+        "website": "https://khiryemma.ma/",
+        "sector": "E-commerce & Produits naturels",
+        "location": "Maroc",
+        "logo": "https://khiryemma.ma/wp-content/uploads/2025/12/logo-khiryemma.webp"
+      },
+      "radiologiepompidou": {
+        "name": "Radiologie Pompidou",
+        "description": "Explorez l'excellence en imagerie médicale. Chez Radiologie Pompidou - Ain Chock, nous mettons à votre disposition une technologie de pointe pour un diagnostic précis et rapide.",
+        "website": "https://radiologie-pompidou.ma/",
+        "sector": "Santé & Médecine",
+        "location": "Casablanca, Maroc",
+        "logo": "https://radiologie-pompidou.ma/assets/img/logo2.png"
+      },
       "mtedd": {
         "name": "Ministère de la Transition Énergétique et du Développement Durable",
         "description": "Refactorisation complète du site web actuel du ministère avec WordPress. Amélioration de l'architecture, optimisation des performances et modernisation de l'interface utilisateur pour une meilleure expérience citoyenne.",
@@ -354,6 +370,11 @@
         "location": "Maroc",
         "logo": "https://www.dentiste-mohammedia.com/wp-content/uploads/2024/06/logo-1.png"
       }
+    },
+    "stats": {
+      "satisfiedClients": "Clients satisfaits",
+      "satisfactionRate": "Taux de satisfaction",
+      "responseTime": "Temps de réponse"
     }
   },
   "recommendations": {

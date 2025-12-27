@@ -290,6 +290,22 @@
     "subtitle": "Organizations that trust us",
     "description": "We have had the pleasure of working with renowned organizations from both public and private sectors to develop innovative and performant web solutions.",
     "items": {
+      "khiryemma": {
+        "name": "Khir Yemma",
+        "description": "Khir Yemma was created to offer you natural, authentic and high-quality products, carefully developed with respect for your health.",
+        "website": "https://khiryemma.ma/",
+        "sector": "E-commerce & Natural Products",
+        "location": "Morocco",
+        "logo": "https://khiryemma.ma/wp-content/uploads/2025/12/logo-khiryemma.webp"
+      },
+      "radiologiepompidou": {
+        "name": "Radiologie Pompidou",
+        "description": "Explore excellence in medical imaging. At Radiologie Pompidou - Ain Chock, we provide you with cutting-edge technology for precise and rapid diagnosis.",
+        "website": "https://radiologie-pompidou.ma/",
+        "sector": "Health & Medicine",
+        "location": "Casablanca, Morocco",
+        "logo": "https://radiologie-pompidou.ma/assets/img/logo2.png"
+      },
       "mtedd": {
         "name": "Ministry of Energy Transition and Sustainable Development",
         "description": "Complete refactoring of the ministry's current website with WordPress. Architecture improvement, performance optimization and user interface modernization for better citizen experience.",
@@ -354,6 +370,11 @@
         "location": "Morocco",
         "logo": "https://www.dentiste-mohammedia.com/wp-content/uploads/2024/06/logo-1.png"
       }
+    },
+    "stats": {
+      "satisfiedClients": "Satisfied clients",
+      "satisfactionRate": "Satisfaction rate",
+      "responseTime": "Response time"
     }
   },
   "recommendations": {
