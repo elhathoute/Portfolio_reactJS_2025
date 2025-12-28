@@ -306,6 +306,14 @@
         "location": "Casablanca, Maroc",
         "logo": "https://radiologie-pompidou.ma/assets/img/logo2.png"
       },
+      "beldinuts": {
+        "name": "Beldinuts",
+        "description": "Beldinuts est née de la passion d'Abderahhim pour les produits naturels et authentiques du Maroc.",
+        "website": "https://beldinuts.ma/",
+        "sector": "E-commerce & Produits naturels",
+        "location": "Maroc",
+        "logo": "https://beldinuts.ma/wp-content/uploads/2025/12/beldinuts-logo-300x300.webp"
+      },
       "mtedd": {
         "name": "Ministère de la Transition Énergétique et du Développement Durable",
         "description": "Refactorisation complète du site web actuel du ministère avec WordPress. Amélioration de l'architecture, optimisation des performances et modernisation de l'interface utilisateur pour une meilleure expérience citoyenne.",
