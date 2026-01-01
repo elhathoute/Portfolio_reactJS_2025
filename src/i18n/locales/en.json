@@ -228,11 +228,11 @@
         "title": "Education",
         "items": {
           "uppa-miage": {
-            "title": "Master's Degree in MIAGE (In Progress)",
-            "school": "University of Pau and Adour Countries",
+            "title": "Master's Degree in MIAGE - UPPA & SupTechnology (In Progress)",
+            "school": "University of Pau and Adour Countries - SupTechnology",
             "period": "Nov 2025 - Nov 2027",
             "location": "Pau, France",
-            "description": "Master's program focused on advanced software engineering, information systems, data management, and enterprise application development. Coursework includes UML modeling, project management, NoSQL databases, distributed systems (JEE), data mining, mobile development, Python advanced programming, data warehousing, cloud computing, and software quality/testing. Developing strong skills in system design, backend & web development (PHP, JEE), data engineering, and modern enterprise integration."
+            "description": "Master's program focused on advanced software engineering, information systems, data management, and enterprise application development. Coursework includes UML modeling, project management, NoSQL databases, distributed systems (JEE), data mining, mobile development, Python advanced programming, data warehousing, cloud computing, and software quality/testing. Developing strong skills in system design, backend & web development (PHP, JEE), data engineering, and modern enterprise integration. Program in collaboration with SupTechnology."
           },
           "youcode": {
             "title": "Full Stack Web Development",

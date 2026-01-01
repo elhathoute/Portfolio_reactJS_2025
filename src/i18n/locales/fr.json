@@ -228,11 +228,11 @@
         "title": "Formation",
         "items": {
           "uppa-miage": {
-            "title": "Master en MIAGE (En cours)",
-            "school": "Université de Pau et des Pays de l'Adour",
+            "title": "Master en MIAGE - UPPA & SupTechnology (En cours)",
+            "school": "Université de Pau et des Pays de l'Adour - SupTechnology",
             "period": "Nov 2025 - Nov 2027",
             "location": "Pau, France",
-            "description": "Programme de Master axé sur l'ingénierie logicielle avancée, les systèmes d'information, la gestion des données et le développement d'applications d'entreprise. Cours incluant la modélisation UML, la gestion de projet, les bases de données NoSQL, les systèmes distribués (JEE), le data mining, le développement mobile, la programmation Python avancée, l'entrepôt de données, le cloud computing, et la qualité/test logiciel. Développement de compétences solides en conception de systèmes, développement backend & web (PHP, JEE), ingénierie des données, et intégration d'entreprise moderne."
+            "description": "Programme de Master axé sur l'ingénierie logicielle avancée, les systèmes d'information, la gestion des données et le développement d'applications d'entreprise. Cours incluant la modélisation UML, la gestion de projet, les bases de données NoSQL, les systèmes distribués (JEE), le data mining, le développement mobile, la programmation Python avancée, l'entrepôt de données, le cloud computing, et la qualité/test logiciel. Développement de compétences solides en conception de systèmes, développement backend & web (PHP, JEE), ingénierie des données, et intégration d'entreprise moderne. Formation en collaboration avec SupTechnology."
           },
           "youcode": {
             "title": "Développement Web Full Stack",
