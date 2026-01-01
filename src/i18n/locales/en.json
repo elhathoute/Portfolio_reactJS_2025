@@ -507,6 +507,9 @@
       "title": "Contact me on WhatsApp",
       "message": "Hello! I'm interested in your web development services.",
       "send": "Open WhatsApp"
+    },
+    "map": {
+      "title": "Location"
     }
   },
   "footer": {

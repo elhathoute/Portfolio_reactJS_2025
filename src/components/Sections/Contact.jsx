@@ -128,14 +128,15 @@ Message envoyé depuis votre portfolio`;
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Contact Form */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Left Column: Form + Maps */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="lg:col-span-2"
+            className="space-y-6"
           >
+            {/* Contact Form */}
             <Card>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -214,9 +215,29 @@ Message envoyé depuis votre portfolio`;
                 </Button>
               </form>
             </Card>
+
+            {/* Google Maps */}
+            <Card>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+                {t('contact.map.title')}
+              </h3>
+              <div className="rounded-lg overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.126432721649!2d-7.807030999999999!3d33.4990115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda881003513707b%3A0xc6f2accd54f28ee0!2sBrainTech!5e1!3m2!1sen!2sma!4v1767294703672!5m2!1sen!2sma"
+                  width="100%"
+                  height="450"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="BrainTech Location"
+                  className="w-full"
+                />
+              </div>
+            </Card>
           </motion.div>
 
-          {/* Contact Info */}
+          {/* Right Column: Contact Info + Social + WhatsApp */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -317,23 +338,6 @@ Message envoyé depuis votre portfolio`;
                     <MessageCircle size={20} className="mr-2" />
                     {t('contact.whatsapp.send')}
                   </motion.a>
-                </div>
-              </div>
-            </Card>
-
-            {/* Response Time */}
-            <Card>
-              <div className="text-center space-y-4">
-                <div className="w-16 h-16 bg-primary-100 dark:bg-primary-900/20 rounded-full flex items-center justify-center mx-auto">
-                  <Clock className="w-8 h-8 text-primary-600 dark:text-primary-400" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                    {t('contact.info.response')}
-                  </h4>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    {t('contact.info.response')}
-                  </p>
                 </div>
               </div>
             </Card>
