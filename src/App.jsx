@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './i18n';
 import Header from './components/Layout/Header';
@@ -12,6 +12,7 @@ import Recommendations from './components/Sections/Recommendations';
 import Blog from './components/Sections/Blog';
 import Contact from './components/Sections/Contact';
 import Footer from './components/Layout/Footer';
+import WhatsAppButton from './components/UI/WhatsAppButton';
 
 // Composant pour la page d'accueil
 const HomePage = () => {
@@ -20,8 +21,8 @@ const HomePage = () => {
       <Hero />
       <CVDownload />
       <About />
-      <Projects />
       <Experience />
+      <Projects />
       <Clients />
       <Recommendations />
       <Contact />
@@ -31,6 +32,29 @@ const HomePage = () => {
 
 
 function App() {
+  useEffect(() => {
+    // Scroll to clients section by default on page load
+    // Only if there's no hash in the URL (to allow direct navigation to other sections)
+    if (!window.location.hash) {
+      // Small delay to ensure DOM is ready
+      setTimeout(() => {
+        const clientsSection = document.querySelector('#clients');
+        if (clientsSection) {
+          clientsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      // If there's a hash, scroll to that section
+      const hash = window.location.hash;
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, []);
+
   return (
     <Router>
       <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
@@ -40,6 +64,7 @@ function App() {
               <Header />
               <HomePage />
               <Footer />
+              <WhatsAppButton />
             </>
           } />
         </Routes>

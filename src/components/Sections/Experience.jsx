@@ -56,6 +56,16 @@ const Experience = () => {
 
   const education = [
     {
+      id: 'uppa-miage',
+      title: t('experience.education.items.uppa-miage.title'),
+      school: t('experience.education.items.uppa-miage.school'),
+      period: t('experience.education.items.uppa-miage.period'),
+      location: t('experience.education.items.uppa-miage.location'),
+      description: t('experience.education.items.uppa-miage.description'),
+      type: 'education',
+      current: true
+    },
+    {
       id: 'youcode',
       title: t('experience.education.items.youcode.title'),
       school: t('experience.education.items.youcode.school'),
@@ -199,7 +209,7 @@ const Experience = () => {
               Expérience professionnelle
             </motion.h3>
             <div className="space-y-8">
-              {experiences.map((experience, index) => (
+              {[...experiences].reverse().map((experience, index) => (
                 <ExperienceItem key={experience.id} item={experience} index={index} />
               ))}
             </div>
@@ -229,12 +239,21 @@ const Experience = () => {
                   >
                     <Card>
                       <div className="space-y-3">
-                        <h4 className="font-bold text-gray-900 dark:text-white">
-                          {edu.title}
-                        </h4>
-                        <p className="text-primary-600 dark:text-primary-400 font-medium">
-                          {edu.school}
-                        </p>
+                        <div className="flex items-start justify-between">
+                          <div className="flex-1">
+                            <h4 className="font-bold text-gray-900 dark:text-white">
+                              {edu.title}
+                            </h4>
+                            <p className="text-primary-600 dark:text-primary-400 font-medium">
+                              {edu.school}
+                            </p>
+                          </div>
+                          {edu.current && (
+                            <span className="px-3 py-1 bg-green-100 dark:bg-green-900/20 text-green-700 dark:text-green-400 rounded-full text-sm font-medium">
+                              {t('experience.current')}
+                            </span>
+                          )}
+                        </div>
                         <div className="flex items-center space-x-4 text-sm text-gray-600 dark:text-gray-400">
                           <div className="flex items-center space-x-1">
                             <Calendar size={14} />

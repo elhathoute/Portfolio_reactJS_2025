@@ -224,25 +224,32 @@
         "description": "Développement d'applications et sites web pour divers clients. Gestion complète des projets de A à Z."
       }
     },
-    "education": {
-      "title": "Formation",
-      "items": {
-        "youcode": {
-          "title": "Développement Web Full Stack",
-          "school": "YouCode",
-          "period": "2022 - 2023",
-          "location": "Youssoufia, Maroc",
-          "description": "Formation intensive en développement web avec focus sur les technologies modernes et les bonnes pratiques."
-        },
-        "university": {
-          "title": "Licence en Sciences et Techniques",
-          "school": "Université Cadi Ayyad",
-          "period": "2019 - 2022",
-          "location": "Marrakech, Maroc",
-          "description": "Formation en informatique et technologies de l'information avec spécialisation en développement logiciel."
+      "education": {
+        "title": "Formation",
+        "items": {
+          "uppa-miage": {
+            "title": "Master en MIAGE (En cours)",
+            "school": "Université de Pau et des Pays de l'Adour",
+            "period": "Nov 2025 - Nov 2027",
+            "location": "Pau, France",
+            "description": "Programme de Master axé sur l'ingénierie logicielle avancée, les systèmes d'information, la gestion des données et le développement d'applications d'entreprise. Cours incluant la modélisation UML, la gestion de projet, les bases de données NoSQL, les systèmes distribués (JEE), le data mining, le développement mobile, la programmation Python avancée, l'entrepôt de données, le cloud computing, et la qualité/test logiciel. Développement de compétences solides en conception de systèmes, développement backend & web (PHP, JEE), ingénierie des données, et intégration d'entreprise moderne."
+          },
+          "youcode": {
+            "title": "Développement Web Full Stack",
+            "school": "YouCode",
+            "period": "2022 - 2023",
+            "location": "Youssoufia, Maroc",
+            "description": "Formation intensive en développement web avec focus sur les technologies modernes et les bonnes pratiques."
+          },
+          "university": {
+            "title": "Licence en Sciences et Techniques",
+            "school": "Université Cadi Ayyad",
+            "period": "2019 - 2022",
+            "location": "Marrakech, Maroc",
+            "description": "Formation en informatique et technologies de l'information avec spécialisation en développement logiciel."
+          }
         }
-      }
-    },
+      },
     "certifications": {
       "title": "Certifications",
       "items": {
@@ -320,7 +327,7 @@
         "website": "https://www.mtedd.gov.ma/",
         "sector": "Secteur public",
         "location": "Rabat, Maroc",
-        "logo": "/assets/img/clients/mtedd-logoFR-2048x593.png"
+        "logo": "https://www.environnement.gov.ma/templates/mde/armoirie_MEME-FR.png"
       },
       "houdamanouzi": {
         "name": "Houda Manouzi",
@@ -483,9 +490,9 @@
       "error": "Erreur lors de l'ouverture de WhatsApp."
     },
     "info": {
-      "email": "abdelaziz.elhathout@gmail.com",
-      "phone": "+212 615 919 437",
-      "whatsapp": "+212 615 919 437",
+      "email": "abdelaziz.e.perso@gmail.com",
+      "phone": "+212 630258502",
+      "whatsapp": "+212 630258502",
       "location": "Casablanca, Maroc",
       "availability": "Disponible pour de nouveaux projets",
       "response": "Réponse sous 24h"

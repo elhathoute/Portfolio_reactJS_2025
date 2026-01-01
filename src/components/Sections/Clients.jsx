@@ -1,17 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { ExternalLink, Building2, MapPin, Globe, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ExternalLink, Building2, MapPin, Globe, ChevronLeft, ChevronRight, Filter } from 'lucide-react';
 import Card from '../UI/Card';
 
 const Clients = () => {
   const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [selectedSector, setSelectedSector] = useState('Tous');
   
   // Récupérer tous les clients depuis les traductions
   const clientsData = t('clients.items', { returnObjects: true });
-  const clients = Object.entries(clientsData).map(([key, client]) => ({
+  const allClients = Object.entries(clientsData).map(([key, client]) => ({
     id: key,
     name: client.name,
     description: client.description,
@@ -21,6 +22,20 @@ const Clients = () => {
     logo: client.logo,
     featured: key === 'mtedd' // MTEDD est le client vedette
   }));
+
+  // Get unique sectors
+  const sectors = useMemo(() => {
+    const uniqueSectors = [...new Set(allClients.map(client => client.sector))];
+    return ['Tous', ...uniqueSectors.sort()];
+  }, [allClients]);
+
+  // Filter clients by selected sector
+  const clients = useMemo(() => {
+    if (selectedSector === 'Tous') {
+      return allClients;
+    }
+    return allClients.filter(client => client.sector === selectedSector);
+  }, [allClients, selectedSector]);
 
   // Responsive items per view
   const [itemsPerView, setItemsPerView] = useState(3);
@@ -43,9 +58,10 @@ const Clients = () => {
     return () => window.removeEventListener('resize', updateItemsPerView);
   }, []);
 
-  // Update maxIndex when itemsPerView changes
+  // Update maxIndex when itemsPerView or clients change
   useEffect(() => {
     setMaxIndex(Math.max(0, clients.length - itemsPerView));
+    setCurrentIndex(0); // Reset to first slide when filter changes
   }, [clients.length, itemsPerView]);
 
   // Auto-play functionality
@@ -90,6 +106,42 @@ const Clients = () => {
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             {t('clients.description')}
           </p>
+        </motion.div>
+
+        {/* Filter Buttons */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-8"
+        >
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <div className="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+              <Filter size={18} />
+              <span className="text-sm font-medium">Filtrer par secteur:</span>
+            </div>
+            {sectors.map((sector) => (
+              <motion.button
+                key={sector}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => {
+                  setSelectedSector(sector);
+                  setIsAutoPlaying(false);
+                }}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+                  selectedSector === sector
+                    ? 'bg-primary-600 text-white shadow-lg'
+                    : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
+                }`}
+              >
+                {sector}
+              </motion.button>
+            ))}
+          </div>
+          <div className="text-center mt-4 text-sm text-gray-500 dark:text-gray-400">
+            {clients.length} client{clients.length > 1 ? 's' : ''} {selectedSector !== 'Tous' ? `dans ${selectedSector}` : 'au total'}
+          </div>
         </motion.div>
 
         {/* Clients Carousel */}

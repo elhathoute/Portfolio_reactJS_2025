@@ -70,13 +70,13 @@ const About = () => {
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <img 
-                    src="/logo.jpeg" 
-                    alt="AbdelazizElh Elhathout" 
-                    className="w-16 h-16 rounded-full object-cover border-2 border-primary-200 dark:border-primary-700"
+                    src="/assets/img/clients/brain-tech-logo.jpeg" 
+                    alt="BrainTech" 
+                    className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-primary-200 dark:border-primary-700"
                   />
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                      AbdelazizElh Elhathout
+                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">
+                      BrainTech
                     </h3>
                     <p className="text-primary-600 dark:text-primary-400 font-medium">
                       {t('hero.title')}

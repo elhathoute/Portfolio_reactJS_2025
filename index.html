@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="AbdelazizElh Elhathout - Développeur Full Stack" />
     <meta property="og:description" content="Développeur Full Stack passionné spécialisé dans Laravel, Symfony, Vue.js et React. Créateur de solutions web innovantes et performantes." />
-    <meta property="og:image" content="https://elhathoutwobz.github.io/portfolio_2024/logo.jpeg" />
+    <meta property="og:image" content="https://elhathoutwobz.github.io/portfolio_2024/assets/img/clients/brain-tech-logo.jpeg" />
     <meta property="og:url" content="https://elhathoutwobz.github.io/portfolio_2024/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Portfolio AbdelazizElh Elhathout" />
@@ -26,7 +26,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="AbdelazizElh Elhathout - Développeur Full Stack" />
     <meta name="twitter:description" content="Développeur Full Stack passionné spécialisé dans Laravel, Symfony, Vue.js et React." />
-    <meta name="twitter:image" content="https://elhathoutwobz.github.io/portfolio_2024/logo.jpeg" />
+    <meta name="twitter:image" content="https://elhathoutwobz.github.io/portfolio_2024/assets/img/clients/brain-tech-logo.jpeg" />
     <meta name="twitter:creator" content="@elhathoutwobz" />
     
     <!-- Additional Meta Tags -->
@@ -49,7 +49,7 @@
       "jobTitle": "Développeur Full Stack",
       "description": "Développeur Full Stack passionné spécialisé dans Laravel, Symfony, Vue.js et React",
       "url": "https://elhathoutwobz.github.io/portfolio_2024/",
-      "image": "https://elhathoutwobz.github.io/portfolio_2024/logo.jpeg",
+      "image": "https://elhathoutwobz.github.io/portfolio_2024/assets/img/clients/brain-tech-logo.jpeg",
       "sameAs": [
         "https://www.linkedin.com/in/abdelaziz-elhathout-191290208/",
         "https://github.com/elhathoutwobz"
@@ -77,11 +77,27 @@
     </script>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="/logo.jpeg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/logo.jpeg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/logo.jpeg" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/logo.jpeg" />
+    <link rel="icon" type="image/jpeg" href="/assets/img/clients/brain-tech-logo.jpeg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/clients/brain-tech-logo.jpeg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/clients/brain-tech-logo.jpeg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/clients/brain-tech-logo.jpeg" />
     <link rel="manifest" href="/site.webmanifest" />
+    <!-- Dark mode by default - Apply before React loads to prevent flash -->
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+          // Only remove dark mode if explicitly set to light
+          document.documentElement.classList.remove('dark');
+        } else {
+          // Default to dark mode (already in HTML class, but ensure it's set)
+          document.documentElement.classList.add('dark');
+          if (!savedTheme || savedTheme !== 'dark') {
+            localStorage.setItem('theme', 'dark');
+          }
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

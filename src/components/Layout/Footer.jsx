@@ -40,12 +40,12 @@ const Footer = () => {
               className="flex items-center space-x-2"
             >
               <img 
-                src="/logo.jpeg" 
-                alt="AbdelazizElh Elhathout" 
-                className="w-10 h-10 rounded-full object-cover border-2 border-primary-200 dark:border-primary-700"
+                src="/assets/img/clients/brain-tech-logo.jpeg" 
+                alt="BrainTech" 
+                className="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover border-2 border-primary-200 dark:border-primary-700"
               />
-              <span className="text-xl font-bold text-gray-900 dark:text-white">
-                AbdelazizElh Elhathout
+              <span className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">
+                BrainTech
               </span>
             </motion.div>
             <motion.p
@@ -136,7 +136,7 @@ const Footer = () => {
         >
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <p className="text-gray-600 dark:text-gray-400 text-sm">
-              © {new Date().getFullYear()} AbdelazizElh Elhathout. {t('footer.rights')}
+              © {new Date().getFullYear()} BrainTech. {t('footer.rights')}
             </p>
             <div className="flex items-center space-x-1 text-gray-600 dark:text-gray-400 text-sm">
               <span>{t('footer.madeWith')}</span>

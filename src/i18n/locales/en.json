@@ -224,25 +224,32 @@
         "description": "Development of applications and websites for various clients. Complete project management from A to Z."
       }
     },
-    "education": {
-      "title": "Education",
-      "items": {
-        "youcode": {
-          "title": "Full Stack Web Development",
-          "school": "YouCode",
-          "period": "2022 - 2023",
-          "location": "Youssoufia, Morocco",
-          "description": "Intensive training in web development with focus on modern technologies and best practices."
-        },
-        "university": {
-          "title": "Bachelor in Science and Technology",
-          "school": "Cadi Ayyad University",
-          "period": "2019 - 2022",
-          "location": "Marrakech, Morocco",
-          "description": "Training in computer science and information technology with specialization in software development."
+      "education": {
+        "title": "Education",
+        "items": {
+          "uppa-miage": {
+            "title": "Master's Degree in MIAGE (In Progress)",
+            "school": "University of Pau and Adour Countries",
+            "period": "Nov 2025 - Nov 2027",
+            "location": "Pau, France",
+            "description": "Master's program focused on advanced software engineering, information systems, data management, and enterprise application development. Coursework includes UML modeling, project management, NoSQL databases, distributed systems (JEE), data mining, mobile development, Python advanced programming, data warehousing, cloud computing, and software quality/testing. Developing strong skills in system design, backend & web development (PHP, JEE), data engineering, and modern enterprise integration."
+          },
+          "youcode": {
+            "title": "Full Stack Web Development",
+            "school": "YouCode",
+            "period": "2022 - 2023",
+            "location": "Youssoufia, Morocco",
+            "description": "Intensive training in web development with focus on modern technologies and best practices."
+          },
+          "university": {
+            "title": "Bachelor in Science and Technology",
+            "school": "Cadi Ayyad University",
+            "period": "2019 - 2022",
+            "location": "Marrakech, Morocco",
+            "description": "Training in computer science and information technology with specialization in software development."
+          }
         }
-      }
-    },
+      },
     "certifications": {
       "title": "Certifications",
       "items": {
@@ -320,7 +327,7 @@
         "website": "https://www.mtedd.gov.ma/",
         "sector": "Public sector",
         "location": "Rabat, Morocco",
-        "logo": "/assets/img/clients/mtedd-logoFR-2048x593.png"
+        "logo": "https://www.environnement.gov.ma/templates/mde/armoirie_MEME-FR.png"
       },
       "houdamanouzi": {
         "name": "Houda Manouzi",
@@ -483,9 +490,9 @@
       "error": "Error opening WhatsApp."
     },
     "info": {
-      "email": "abdelaziz.elhathout@gmail.com",
-      "phone": "+212 615 919 437",
-      "whatsapp": "+212 615 919 437",
+      "email": "abdelaziz.e.perso@gmail.com",
+      "phone": "+212 630258502",
+      "whatsapp": "+212 630258502",
       "location": "Casablanca, Morocco",
       "availability": "Available for new projects",
       "response": "Response within 24h"

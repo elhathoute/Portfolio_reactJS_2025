@@ -144,9 +144,9 @@ const Hero = () => {
                 className="absolute inset-4 bg-white dark:bg-gray-800 rounded-full shadow-2xl flex items-center justify-center overflow-hidden"
               >
                 <img 
-                  src="/logo.jpeg" 
-                  alt="AbdelazizElh Elhathout" 
-                  className="w-32 h-32 rounded-full object-cover"
+                  src="/assets/img/clients/brain-tech-logo.jpeg" 
+                  alt="BrainTech" 
+                  className="w-40 h-40 md:w-44 md:h-44 lg:w-48 lg:h-48 rounded-full object-cover"
                 />
               </motion.div>
 
