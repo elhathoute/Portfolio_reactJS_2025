@@ -76,7 +76,7 @@ const Footer = () => {
               transition={{ delay: 0.1 }}
               className="space-y-2"
             >
-              {['home', 'about', 'projects', 'experience', 'clients', 'recommendations', 'blog', 'contact'].map((item) => (
+              {['home', 'about', 'projects', 'experience', 'clients', 'recommendations', 'contact'].map((item) => (
                 <a
                   key={item}
                   href={`#${item}`}

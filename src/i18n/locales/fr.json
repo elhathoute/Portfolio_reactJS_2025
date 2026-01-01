@@ -359,7 +359,7 @@
         "website": "https://youssefbijouterie.ma/",
         "sector": "Bijouterie & Luxe",
         "location": "Témara, Maroc",
-        "logo": "https://youssefbijouterie.ma/assets/img/watch-image/logoYoussef-0001%20-1.jpg"
+        "logo": "https://youssefbijouterie.ma/assets/img/watch-image/logoYoussef-0001-1.jpg"
       },
       "sidimaarouf": {
         "name": "Cabinet Pluridisciplinaire Sidi Maarouf",
@@ -529,7 +529,6 @@
     "title": "Consulter le CV en français et en anglais",
     "subtitle": "CV professionnel optimisé pour l'impression et le partage numérique",
     "viewFR": "Voir CV en Français",
-    "viewEN": "View CV in English",
-    "note": "Format PDF optimisé • Compatible mobile et desktop"
+    "viewEN": "View CV in English"
   }
 }

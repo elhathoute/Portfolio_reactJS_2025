@@ -9,7 +9,6 @@ import Projects from './components/Sections/Projects';
 import Experience from './components/Sections/Experience';
 import Clients from './components/Sections/Clients';
 import Recommendations from './components/Sections/Recommendations';
-import Blog from './components/Sections/Blog';
 import Contact from './components/Sections/Contact';
 import Footer from './components/Layout/Footer';
 import WhatsAppButton from './components/UI/WhatsAppButton';

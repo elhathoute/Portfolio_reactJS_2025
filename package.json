@@ -13,7 +13,8 @@
     "preview": "vite preview",
     "deploy:build": "npm run build && echo 'Build completed! Upload dist/ folder to Hostinger public_html'",
     "deploy:test": "npm run build && npm run preview",
-    "cv:generate": "node ./scripts/generate-cv-pdf.mjs"
+    "cv:generate": "node ./scripts/generate-cv-pdf.mjs",
+    "blog:add": "node ./scripts/fetch-linkedin-posts.mjs"
   },
   "dependencies": {
     "framer-motion": "^11.15.0",

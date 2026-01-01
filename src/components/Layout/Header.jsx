@@ -57,16 +57,28 @@ const Header = () => {
     { key: 'projects', href: '#projects' },
     { key: 'clients', href: '#clients' },
     { key: 'recommendations', href: '#recommendations' },
-    { key: 'blog', href: '#blog' },
     { key: 'contact', href: '#contact' },
   ];
 
   const scrollToSection = (href) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    // Close menu first to avoid animation conflicts
     setIsMenuOpen(false);
+    
+    // Small delay to ensure menu closes before scrolling
+    setTimeout(() => {
+      const element = document.querySelector(href);
+      if (element) {
+        // Get header height to offset scroll position
+        const headerHeight = 80; // Approximate header height
+        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - headerHeight;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }, 100);
   };
 
   return (
@@ -164,8 +176,13 @@ const Header = () => {
                     key={item.key}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    onClick={() => scrollToSection(item.href)}
-                    className="block w-full text-left px-4 py-2.5 sm:py-3 text-sm sm:text-base text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      scrollToSection(item.href);
+                    }}
+                    className="block w-full text-left px-4 py-2.5 sm:py-3 text-sm sm:text-base text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium cursor-pointer"
+                    type="button"
                   >
                     {t(`nav.${item.key}`)}
                   </motion.button>

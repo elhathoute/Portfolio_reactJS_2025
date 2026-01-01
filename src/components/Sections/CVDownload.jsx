@@ -55,12 +55,6 @@ const CVDownload = () => {
               </button>
             </motion.a>
           </div>
-
-          <div className="text-center mt-6">
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              {t('cvDownload.note', 'Format PDF optimisé • Compatible mobile et desktop')}
-            </p>
-          </div>
         </motion.div>
       </div>
     </section>
